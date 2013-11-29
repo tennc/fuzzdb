@@ -1,0 +1,13 @@
+/site.xml
+/resin-doc/viewfile/?contextpath=/&servletpath=&file=WEB-INF/web.xml
+/../../template/shared/indexTemplate.xml
+/./WEB-INF/web.xml
+//WEB-INF/web.xml
+/8000/./WEB-INF/web.xml
+/8100/WEB-INF/web.xml
+/WEB-INF./web.xml
+/WEB-INF/web.xml
+/servlet/oracle.xml.xsql.XSQLServlet/soapdocs/webapps/soap/WEB-INF/config/soapConfig.xml
+/servlet/oracle.xml.xsql.XSQLServlet/xsql/lib/XSQLConfig.xml
+/soapdocs/webapps/soap/WEB-INF/config/soapConfig.xml
+/sitemap.xml
