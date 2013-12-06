@@ -1,0 +1,32 @@
+ SELECT banner FROM v$version WHERE banner LIKE 'Oracle%'; 
+ SELECT banner FROM v$version WHERE banner LIKE 'TNS%';
+ SELECT version FROM v$instance;
+ SELECT user FROM dual;
+ SELECT username FROM all_users ORDER BY username;
+ SELECT name FROM sys.user$; 
+ SELECT name, password, astatus FROM sys.user$;
+ SELECT name,spare4 FROM sys.user$;
+ SELECT * FROM session_privs;
+ SELECT * FROM dba_sys_privs WHERE grantee = 'DBSNMP';
+ SELECT grantee FROM dba_sys_privs WHERE privilege = 'SELECT ANY DICTIONARY';
+ SELECT GRANTEE, GRANTED_ROLE FROM DBA_ROLE_PRIVS;
+ SELECT DISTINCT grantee FROM dba_sys_privs WHERE ADMIN_OPTION = 'YES';
+ SELECT UTL_INADDR.get_host_name FROM dual;
+ SELECT host_name FROM v$instance;
+ SELECT UTL_INADDR.get_host_address FROM dual; -- gets IP address
+ SELECT UTL_INADDR.get_host_name('<insert-INternal-IP-Address-2-get-hostname>') FROM dual;
+ SELECT name FROM V$DATAFILE;
+ SELECT global_name FROM global_name; 
+ SELECT name FROM v$database; 
+ SELECT instance_name FROM v$instance;
+ SELECT SYS.DATABASE_NAME FROM DUAL;
+ SELECT DISTINCT owner FROM all_tables;
+ SELECT column_name FROM all_tab_columns WHERE table_name = 'blah'; 
+ SELECT column_name FROM all_tab_columns WHERE table_name = 'blah' and owner = 'foo'; 
+ SELECT table_name FROM all_tables;
+ SELECT owner, table_name FROM all_tables;
+ SELECT owner, table_name FROM all_tab_columns WHERE column_name LIKE '%ColumnName%';
+ SELECT username FROM (SELECT ROWNUM r, username FROM all_users ORDER BY username) WHERE r=N;
+ SELECT value FROM v$parameter2 WHERE name = 'utl_file_dir';
+ 
+ 

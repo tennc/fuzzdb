@@ -1,0 +1,6 @@
+database()
+odfalliance
+odfblog
+HEX DB NAMES YOU WANT TO ENUMERATE TABLES FROM AND PUT IN THIS FILE AND re-SAVE. Don't forget to make sure they have 0xHEX coding (Burpsuite doesnt add the 0x to the front so make sure you add so MySQL knows how to properly handle).
+0x6f6466616c6c69616e63650a
+0x6f6466626c6f67

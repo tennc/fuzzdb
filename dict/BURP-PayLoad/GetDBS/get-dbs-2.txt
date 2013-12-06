@@ -1,0 +1,3 @@
+ from information_schema.schemata
++from+information_schema.schemata
+/**/from/**/information_schema.schemata

