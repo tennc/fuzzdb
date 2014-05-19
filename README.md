@@ -4,5 +4,9 @@ fuzzdb
 
 此项目以http://code.google.com/p/fuzzdb 为基础。
 
+在扩充一个项目~
+
+https://github.com/danielmiessler/SecLists
+
 去其糟粕，留其精华。
 
