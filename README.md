@@ -8,7 +8,7 @@ fuzzdb
 
 https://github.com/danielmiessler/SecLists
 
-[wfuzz](https://github.com/xmendez/wfuzz/tree/master/wordlist)
+[xmendez/wfuzz](https://github.com/xmendez/wfuzz/tree/master/wordlist)
 
 去其糟粕，留其精华。
 
