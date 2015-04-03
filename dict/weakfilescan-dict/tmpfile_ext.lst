@@ -1,0 +1,10 @@
+~
+.~
+.bak
+.BAK
+.{re=exrex:[0-3]}$
+{re=exrex:[0-3]}$
+.swp
+.tmp
+!
+.{re=exrex:201[0-5]}$

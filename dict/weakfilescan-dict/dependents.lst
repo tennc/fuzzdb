@@ -1,0 +1,8 @@
+%DEPEN_NAME%{re=exrex:[0-9]}$
+%DEPEN_NAME%{re=exrex:(200[0-9])|(201[0-5])}$
+%DEPEN_NAME%{re=exrex:(!?!|!!!)|(@?@|@@@)|123}$
+%EXT%{re=exrex:(!?!|!!!)|(@?@|@@@)|123}$
+%DOMAIN%{re=exrex:(!?!|!!!)|(@?@|@@@)|123}$
+%DOMAIN%{re=exrex:(!?!|!!!)|(@?@|@@@)|123}$
+%DOMAIN%{re=exrex:(!?!|!!!)|(@?@|@@@)|123}$
+admin{re=exrex:[0-9]}$
