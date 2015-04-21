@@ -10,5 +10,7 @@ https://github.com/danielmiessler/SecLists
 
 [xmendez/wfuzz](https://github.com/xmendez/wfuzz/tree/master/wordlist)
 
+license: GPL v3
+
 去其糟粕，留其精华。
 
