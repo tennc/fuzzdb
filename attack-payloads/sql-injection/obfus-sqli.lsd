@@ -1,0 +1,22 @@
+SELECT 1; SELECT BENCHMARK(5000000,MD5(1));
+SELECT concat(char(x'70617373'),char(b'1110111011011110111001001100100')) #"password"
+SELECT CHR(84)||CHR(69)||CHR(83)||CHR(84)a FROM user_tables;
+SELECT@a:=(@b:=1); # selects 1 as well
+SELECT @a:=26143544982.875,@b:=16,unhex(hex(@a*@b)); #'admin'
+SELECT@,/*!00000@a:=26143544982.875,@b:=x'3136',*/unhex(hex(@a*@b)) #'admin'
+SELECT E'\\101\\101';
+SELECT q'AfoobarA' FROM test
+SELECT q'<foobar>' FROM test
+SELECT unhex(414141)
+SELECT 0x414141
+SELECT 'A' <=> 'Ä', 'é' = 'E', 'u' = 'Ü';
+SELECT '\x41\x41\x41'
+SELECT "fo""o";
+SELECT 'foobar' = 'foo' + /* foo */ + 'bar ';
+SELECT(extractvalue(0x3C613E61646D696E3C2F613E,0x2f61));
+SELECT UpdateXML('<script x=_></script>', '/script/@x', 'src=//0x.lv');
+seL/*ect 0 */e/**/Ct-- /**/1
+S/**/ELECT(--
+SELECT@:=/*!00000UNHEX(*//*!99999x*/N'3136′/*!00000)*/
+SELECT@:=/*!111111||1*/
+SELECT UpdateXML(concat(0x3c,'script',0x3e,'alert(1)',0x3c,'/script',0x3e),'/x', 0)
