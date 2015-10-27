@@ -1489,6 +1489,7 @@
 /Down_Admin_add
 /Down_Admin_del
 /Down_Admin_modi
+/dxadmin
 /EAdmin
 /EducationManager/admin
 /Ex_Gp_Admin_Data
@@ -1718,7 +1719,7 @@
 /admin/webeditor/db
 /admin/xh_login
 /admin/yns_login
-/admin/ĞÂ½¨ÎÄ¼ş¼Ğ
+/admin/æ–°å»ºæ–‡ä»¶å¤¹
 /admin0003
 /admin1
 /admin1/Admin_Login
@@ -2387,5 +2388,5 @@
 /yz_dg_Admin_search
 /zgadmin
 /zyadmin
-/ĞÂ½¨ÎÄ¼ş¼Ğ/admin
-/¾ÉÍøÕ¾/admin
+/æ–°å»ºæ–‡ä»¶å¤¹/admin
+/æ—§ç½‘ç«™/admin
