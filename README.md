@@ -10,6 +10,9 @@ https://github.com/danielmiessler/SecLists
 
 [xmendez/wfuzz](https://github.com/xmendez/wfuzz/tree/master/wordlist)
 
+密码收集
+[dc3l1ne/Blasting_dictionary](https://github.com/dc3l1ne/Blasting_dictionary)
+
 license: GPL v3
 
 去其糟粕，留其精华。
