@@ -1060,6 +1060,7 @@ adminx
 adminXP
 adminxxx
 adminz
+adminzxc
 adminzone
 admloginuser.%EXT%
 adovbs.inc
