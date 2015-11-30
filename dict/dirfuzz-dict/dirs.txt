@@ -2183,6 +2183,7 @@ javascript/editors/fckeditor
 javascript/tiny_mce
 jcadmin
 jdbc
+jm
 jmssender
 jmstrader
 jmx-console
@@ -3503,4 +3504,5 @@ WS_FTP.log
 WS_FTP.LOG
 WS_FTP/
 WSsamples
+wudi
 XSQLConfig.xml
