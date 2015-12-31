@@ -1100,6 +1100,7 @@ alm_admin
 anews_admin
 apadminred
 apadminred.html
+appht
 aphtpasswd.html
 api
 app
@@ -1931,6 +1932,7 @@ gsadmin
 guide
 guides
 gwadmin
+gxfc
 h
 hadmin
 hardware
@@ -1978,6 +1980,7 @@ hostadmin
 hotel_admin
 howto
 hradmin
+ht
 htaccess.bak
 htaccess.txt
 htadmin
