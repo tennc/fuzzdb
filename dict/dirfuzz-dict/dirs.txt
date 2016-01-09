@@ -1615,6 +1615,7 @@ dbaccess.log
 dbadmin
 dbase
 dcadmin.cgi
+dd/hmhtydcz/
 de
 dealer_admin
 dealeradmin
