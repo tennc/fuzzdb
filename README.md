@@ -15,13 +15,13 @@ https://github.com/danielmiessler/SecLists
 [dc3l1ne/Blasting_dictionary](https://github.com/dc3l1ne/Blasting_dictionary)
 
 继续添加新的字典
->>>由于字典太大，压缩包就要560M+，故给出网盘地址
+>>由于字典太大，压缩包就要560M+，故给出网盘地址
 
-[下载地址](https://pan.baidu.com/s/1PXkEo-Mk6AiFIBUUXhvhVg) 
+[https://pan.baidu.com/s/1PXkEo-Mk6AiFIBUUXhvhVg](https://pan.baidu.com/s/1PXkEo-Mk6AiFIBUUXhvhVg) 
 提取码：tz2a 
 
->>>转自微信公众号： 小白帽学习之路
->>>文章出自：https://mp.weixin.qq.com/s/MpwJFWAFJH5K2BhCD9K_vQ
+>>转自微信公众号： 小白帽学习之路
+>>文章出自：https://mp.weixin.qq.com/s/MpwJFWAFJH5K2BhCD9K_vQ
 
 license: GPL v3
 
