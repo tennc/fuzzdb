@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftennc%2Ffuzzdb.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftennc%2Ffuzzdb?ref=badge_shield)
+
 fuzzdb
 ========================
 这是一个扩展fuzzdb的项目，由于原项目在google托管，且已经停止更新，遂发起这个项目。
@@ -28,3 +30,7 @@ license: GPL v3
 
 去其糟粕，留其精华。
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftennc%2Ffuzzdb.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftennc%2Ffuzzdb?ref=badge_large)
