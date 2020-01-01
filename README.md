@@ -6,7 +6,7 @@ fuzzdb
 
 此项目以http://code.google.com/p/fuzzdb 为基础。
 
-在扩充2个项目~
+在扩充3个项目~
 
 https://github.com/danielmiessler/SecLists
 
@@ -15,6 +15,10 @@ https://github.com/danielmiessler/SecLists
 爆破字典收集
 
 [dc3l1ne/Blasting_dictionary](https://github.com/dc3l1ne/Blasting_dictionary)
+
+fuzzdicts
+
+[TheKingOfDuck/fuzzDicts](https://github.com/TheKingOfDuck/fuzzDicts)
 
 继续添加新的字典
 >>由于字典太大，压缩包就要560M+，故给出网盘地址
