@@ -1,0 +1,3 @@
+[submodule "fuzzDicts"]
+	path = fuzzDicts
+	url = https://github.com/TheKingOfDuck/fuzzDicts
