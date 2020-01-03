@@ -30,7 +30,7 @@ fuzzdicts
 
 >>文章出自：https://mp.weixin.qq.com/s/MpwJFWAFJH5K2BhCD9K_vQ
 
-license: GPL v3
+license: MIT
 
 去其糟粕，留其精华。
 
