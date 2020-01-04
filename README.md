@@ -20,6 +20,8 @@ fuzzdicts
 
 [TheKingOfDuck/fuzzDicts](https://github.com/TheKingOfDuck/fuzzDicts)
 
+[1N3/IntruderPayloads](https://github.com/1N3/IntruderPayloads)
+
 继续添加新的字典
 >>由于字典太大，压缩包就要560M+，故给出网盘地址
 
@@ -34,7 +36,3 @@ license: MIT
 
 去其糟粕，留其精华。
 
-
-
-## License
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftennc%2Ffuzzdb.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftennc%2Ffuzzdb?ref=badge_shield)
