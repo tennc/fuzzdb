@@ -35,7 +35,6 @@ fuzzdicts
 一个报错好东动  用在bp 上的
 
 [webHunt](https://github.com/ghsec/webHunt)
-
 author: ghsec
 
 license: MIT
