@@ -32,6 +32,11 @@ fuzzdicts
 
 >>文章出自：https://mp.weixin.qq.com/s/MpwJFWAFJH5K2BhCD9K_vQ
 
+一个报错好东动  用在bp 上的
+
+[webHunt](https://github.com/ghsec/webHunt)
+author: ghsec
+
 license: MIT
 
 去其糟粕，留其精华。
