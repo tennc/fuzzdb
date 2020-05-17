@@ -37,7 +37,7 @@ fuzzdicts
 [webHunt](https://github.com/ghsec/webHunt)
 author: ghsec
 
-[鸭王的fuzzDicts](https://github.com/TheKingOfDuck/fuzzDicts)
+
 
 license: MIT
 
