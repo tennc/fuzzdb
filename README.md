@@ -37,6 +37,8 @@ fuzzdicts
 [webHunt](https://github.com/ghsec/webHunt)
 author: ghsec
 
+[鸭王的fuzzDicts](https://github.com/TheKingOfDuck/fuzzDicts)
+
 license: MIT
 
 去其糟粕，留其精华。
