@@ -1,6 +1,6 @@
 [submodule "fuzzDicts"]
 	path = fuzzDicts
-	url = https://github.com/TheKingOfDuck/fuzzDicts
+	url = https://github.com/TheKingOfDuck/fuzzDicts.git
 [submodule "SecLists"]
 	path = SecLists
-	url =https://github.com/danielmiessler/SecLists
+	url =https://github.com/danielmiessler/SecLists.git
