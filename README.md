@@ -37,7 +37,7 @@ fuzzdicts
 [webHunt](https://github.com/ghsec/webHunt)
 author: ghsec
 
-
+[swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 
 license: MIT
 
