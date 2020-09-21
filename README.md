@@ -39,6 +39,7 @@ fuzzdicts
 author: ghsec
 
 这是另外一个fuzzdb payloads
+
 [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 
 license: MIT
