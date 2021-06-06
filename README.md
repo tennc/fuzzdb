@@ -22,7 +22,10 @@ fuzzdicts
 
 [1N3/IntruderPayloads](https://github.com/1N3/IntruderPayloads)
 
+[fuzz-security/SuperWordlist](https://github.com/fuzz-security/SuperWordlist)
+
 继续添加新的字典
+
 >>由于字典太大，压缩包就要560M+，故给出网盘地址
 
 [https://pan.baidu.com/s/1PXkEo-Mk6AiFIBUUXhvhVg](https://pan.baidu.com/s/1PXkEo-Mk6AiFIBUUXhvhVg) 
