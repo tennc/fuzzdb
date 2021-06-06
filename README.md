@@ -16,8 +16,6 @@ https://github.com/danielmiessler/SecLists
 
 [dc3l1ne/Blasting_dictionary](https://github.com/dc3l1ne/Blasting_dictionary)
 
-fuzzdicts
-
 [TheKingOfDuck/fuzzDicts](https://github.com/TheKingOfDuck/fuzzDicts)
 
 [1N3/IntruderPayloads](https://github.com/1N3/IntruderPayloads)
